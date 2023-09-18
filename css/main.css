@@ -168,7 +168,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
     display: flex;
     flex-direction: row;
 }
-.boyku-title-wrapper{
+.boyku-title-wrapper {
     padding-left: 41px;
 }
 .boyku-title__title {
@@ -187,7 +187,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
     line-height: 140%; /* 22.4px */
     letter-spacing: 0.16px;
 }
-.subtitle-padding{
+.subtitle-padding {
     padding-top: 20px;
 }
 .container-boyku__map {
