@@ -15,50 +15,65 @@
     <title>Бойко Мандри</title>
 </head>
 <header>
-    <div class="container">
+    <div class="container-header">
         <div class="logo">
             <img src="/image/logo.svg" alt="logo">
         </div>
         <div class="navigation">
-            <div class="navigation-items">
+            <div class="navigation__item">
                 <ul>
-                    <a href="#"><li>Маршрути</li></a>
-                    <a href="#"><li>Послуги</li></a>
-                    <a href="#"><li>Контакти</li></a>
+                    <a class="navigation__item__1" href="#"><li>Маршрути</li></a>
+                    <a class="navigation__item__2" href="#"><li>Послуги</li></a>
+                    <a class="navigation__item__3" href="#"><li>Контакти</li></a>
                 </ul>
             </div>
             <div class="language-change">
-                <img src="/image/language.svg" alt="earth">
-                <p>Ua</p>
-                <img src="/image/language_row.svg" alt="language-row">
+                <img class="language-change__image-earth" src="/image/language.svg" alt="earth">
+                <p class="language-change__layout">Ua</p>
+                <img class="language-change__image-row" src="/image/language_row.svg" alt="language-row">
             </div>
-            <div class="contacts_wrap">
+            <div class="contacts-wrap">
                 <a href="#">
-                    <div class="contacts">
-                        <img src="/image/TelephoneFill.svg" alt="Telephone">
-                        <p>Зв'язатись</p>
+                    <div class="contacts-wrap__button">
+                        <img class="contacts-wrap__image-phone" src="/image/TelephoneFill.svg" alt="Telephone">
+                        <p class="contacts-wrap__text">Зв'язатись</p>
                     </div>
                 </a>
             </div>
             <div class="menu">
-                <a href="#"><img src="/image/menu.svg" alt="menu"></a>
+                <a class="menu__image" href="#"><img src="/image/menu.svg" alt="menu"></a>
             </div>
         </div>
     </div>
 </header>
 <body>
-    <div class="container__title">
-        <div class="title">Піші й вело прогулянки горами Бойківщини</div>
-        <div class="title-info__wrap">
-            <div class="title-info">Маршрути Бойківщиною — це етнокультура, з якою варто познайомитися, щоб закохатися в неї назавжди</div>
-            <div class="title__button-wrap">
-                <a href="#"><div class="title__button">Підібрати маршрут</div></a>
-                <div class="title__button-info"><p>До речі, вони</p><p class="button-accent">безкоштовні ;)</p></div>
+    <div class="container-title">
+        <div class="container-title__title">Піші й вело прогулянки горами Бойківщини</div>
+        <div class="container-title__wrap">
+            <div class="container-title__subtitle">Маршрути Бойківщиною — це етнокультура, з якою варто познайомитися, щоб закохатися в неї назавжди</div>
+            <div class="title-button-wrap">
+                <a href="#"><div class="title-button-wrap__text">Підібрати маршрут</div></a>
+                <div class="title-button-wrap__info"><p>До речі, вони</p><p class="title-button-wrap__accent">безкоштовні ;)</p></div>
             </div>
         </div> 
     </div>
-    <div class="container__video">
-        <video class="title__video" controls autoplay loop src="/image/Video/grass.mp4"></video>
+    <div class="container-video">
+        <video class="container-video__title-video" autoplay loop muted src="/image/Video/grass.mp4"></video>
+    </div>
+    <div class="container-boyku">
+        <div class="boyku-title">
+            <div class="boyku-title__accent"><p>Можливо, вас</p><p>цікавить</p></div>
+            <div class="boyku-title-wrapper">
+                <div class="boyku-title__title"><p>Що таке</p><p>Бойківщина?</p></div>
+                <div class="boyku-title__subtitle">
+                    <p>Це регіон на схилах Карпат, що охоплює райони сучасної <p>Львівської та Івано-Франківської областей.</p></p>
+                    <p class="subtitle-padding">Це краєвиди, історія та самобутня фольклорна культура бойків.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-boyku__map">
+            <img src="/image/map.svg" alt="map">
+        </div>
     </div>
 </body>
 <footer></footer>
