@@ -1,7 +1,11 @@
-<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="9" cy="9" r="8" stroke="#131415" stroke-width="1.2"/>
-<path d="M9 16.5C7.34315 16.5 6 13.1421 6 9C6 4.85786 7.34315 1.5 9 1.5" stroke="#131415" stroke-width="1.2"/>
-<path d="M2.50342 5C3.8002 5.8967 6.22399 6.5 9.00005 6.5C11.7275 6.5 14.1149 5.91766 15.4275 5.04686" stroke="#131415" stroke-width="1.2"/>
-<path d="M15.4272 13C14.1305 12.1033 11.7067 11.5 8.93061 11.5C6.20319 11.5 3.8158 12.0823 2.50317 12.9531" stroke="#131415" stroke-width="1.2"/>
-<path d="M9 16.5C10.6569 16.5 12 13.1421 12 9C12 4.85786 10.6569 1.5 9 1.5" stroke="#131415" stroke-width="1.2"/>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Globe2">
+<g id="Group 2">
+<circle id="Ellipse 1" cx="10" cy="10" r="8" stroke="#131415" stroke-width="1.2"/>
+<path id="Ellipse 2" d="M10 17.5C8.34315 17.5 7 14.1421 7 10C7 5.85786 8.34315 2.5 10 2.5" stroke="#131415" stroke-width="1.2"/>
+<path id="Ellipse 4" d="M3.50342 6C4.8002 6.8967 7.22399 7.5 10.0001 7.5C12.7275 7.5 15.1149 6.91766 16.4275 6.04686" stroke="#131415" stroke-width="1.2"/>
+<path id="Ellipse 5" d="M16.4272 14C15.1305 13.1033 12.7067 12.5 9.93061 12.5C7.20319 12.5 4.8158 13.0823 3.50317 13.9531" stroke="#131415" stroke-width="1.2"/>
+<path id="Ellipse 3" d="M10 17.5C11.6569 17.5 13 14.1421 13 10C13 5.85786 11.6569 2.5 10 2.5" stroke="#131415" stroke-width="1.2"/>
+</g>
+</g>
 </svg>

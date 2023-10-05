@@ -86,6 +86,24 @@ h6 {
     font-weight: inherit;
 }
 
+/* styles.css */
+header {
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.6s ease;
+    opacity: 1;
+}
+
+header.hidden {
+    z-index: -5;
+    opacity: 0;
+}
+
+
 .container-header {
     display: flex;
     flex-direction: row;
@@ -93,7 +111,7 @@ h6 {
 }
 
 .logo {
-    margin: 20px 0px 0px 60px;
+    margin: 20px 0px 20px 60px;
 }
 
 .navigation {
@@ -188,6 +206,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 80px 0px;
 }
 
 .container-title-wrap_2 {
@@ -286,7 +305,8 @@ h6 {
 }
 
 .container-boyku-wrapper {
-    margin: 160px 185px 0px 185px;
+    margin: 160px 0px 0px 0px;
+    padding: 0px 185px;
     width: 100%;
 }
 
@@ -298,7 +318,6 @@ h6 {
 }
 
 .boyku-title__accent {
-    width: 140px;
     padding-top: 20px;
     color: var(--black, #131415);
     font-variant-numeric: lining-nums proportional-nums;
@@ -340,6 +359,15 @@ h6 {
     letter-spacing: 0.16px;
 }
 
+.container-boyku__map {
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.container-boyku__map img {
+    width: 100%;
+}
+
 .subtitle-padding {
     padding-top: 20px;
 }
@@ -368,7 +396,7 @@ h6 {
 }
 
 .emotions-title__accent {
-    width: 140px;
+    width: 118px;
     padding-top: 20px;
     color: var(--black, #131415);
     /* font-variant-numeric: lining-nums proportional-nums; */
@@ -394,14 +422,16 @@ h6 {
 }
 
 .emotions-items-wrap {
-    display: flex;
-    max-width: 1200px;
+    /* display: flex; */
+    /* max-width: 1200px; */
+    width: 100%;
 }
 
 .emotions-items-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 0px 185px;
 }
 
 .emotion-items {
@@ -414,6 +444,8 @@ h6 {
 .emotion-items__item_1 {
     width: 379px;
     height: 572px;
+    width: 53%;
+    /* height: 100%; */
     border-radius: 12px;
     background: linear-gradient(180deg, #E3EFE9 0%, #EBE8D7 64.34%);
 }
@@ -422,10 +454,14 @@ h6 {
     display: flex;
     flex-direction: row;
     gap: 28px;
-    width: 379px;
-    height: 572px;
+    /* width: 379px;
+    height: 572px; */
+    width: 100%;
+    height: 100%;
     border-radius: 12px;
-    background: url(/image/items-forest.svg) bottom no-repeat;
+    background: url(/image/landscape.png) no-repeat;
+    background-size: cover;
+    background-position: bottom right;
 }
 
 .emotion-items__item_1s a {
@@ -456,16 +492,25 @@ h6 {
     margin-top: 28px;
 }
 
+.emotion-wrapper-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .emotion-wrapper {
     display: flex;
-    flex-wrap: wrap;
     gap: 16px;
     margin-left: 16px;
+    width: 100%;
 }
 
 .emotion-items__item_2 {
-    width: 380px;
-    height: 278px;
+    /* width: 380px;
+    height: 278px; */
+    width: 100%;
+    height: 100%;
     border-radius: 12px;
     background: #CFE8D0;
 }
@@ -480,7 +525,7 @@ h6 {
     font-weight: 500;
     line-height: 88%;
     /* 31.68px */
-    width: 50%;
+    width: 100%;
     padding: 28px 0px 0px 28px;
 }
 
@@ -488,20 +533,36 @@ h6 {
     border-radius: 12px;
     height: 100%;
     width: 100%;
-    background: url(/image/items-ellipse.svg);
+    background: url(/image/emotions-ellipse.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+
+.item2-img {
+    width: 93%;
+    height: 91%;
+    background: url(/image/delicious.png);
     background-position: bottom right;
     background-repeat: no-repeat;
 }
 
-.emotion-items__item_2s img {
-    margin: 10px 0px 0px 204px;
-}
-
 .emotion-items__item_3 {
-    width: 379px;
-    height: 278px;
+    /* width: 379px;
+    height: 278px; */
+    width: 100%;
+    height: 100%;
     border-radius: 12px;
     background: var(--green, #01594D);
+}
+
+/* .emotion-items__item_3s {
+    width: 100%;
+    height: 100%;
+} */
+
+.emotion-items__item_3s img {
+    width: 100%;
+    height: 172px;
 }
 
 .emotion-items__item_3s p {
@@ -514,16 +575,26 @@ h6 {
     font-weight: 500;
     line-height: 88%;
     /* 31.68px */
-    width: 60%;
+    width: 100%;
     padding: 28px 0px 14px 28px;
 }
 
 .emotion-items__item_4 {
     /* width: 775px;
     height: 278px; */
-    background: url(/image/mountain.svg) no-repeat;
     width: 100%;
-    height: 278px;
+    height: 100%;
+    margin-left: 16px;
+    border-radius: 20px;
+}
+
+.item4-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url(/image/girl-landscape.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
 }
 
 .container-routes {
@@ -535,10 +606,6 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.routes-wrap img {
-    margin-top: -50px;
 }
 
 .routes-wrap__title-wrap {
@@ -581,7 +648,8 @@ h6 {
 
 .route-versions-wrap {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    padding: 0px 185px;
 }
 
 .route-versions {
@@ -589,6 +657,7 @@ h6 {
     flex-direction: column;
     gap: 16px;
     margin-top: 56px;
+    width: 100%;
 }
 
 .route-versions__1 {
@@ -597,8 +666,8 @@ h6 {
 }
 
 .route-versions__1_title {
-    width: 585px;
-    height: 440px;
+    width: 90%;
+    height: 100%;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.10);
     padding: 28px;
@@ -651,6 +720,7 @@ h6 {
 
 .routes1-info-wrap__height {
     display: flex;
+    gap: 8px;
     padding: 6px 20px;
     justify-content: center;
     align-items: center;
@@ -744,14 +814,25 @@ h6 {
     letter-spacing: 0.18px;
 }
 
+.routes1-img {
+    width: 100%;
+    height: 100%;
+}
+
+.routes1-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
 .route-versions__2 {
     display: flex;
     flex-direction: row;
 }
 
 .route-versions__2_title {
-    width: 585px;
-    height: 440px;
+    width: 90%;
+    height: 100%;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.10);
     padding: 28px;
@@ -804,6 +885,7 @@ h6 {
 
 .routes2-info-wrap__height {
     display: flex;
+    gap: 8px;
     padding: 6px 20px;
     justify-content: center;
     align-items: center;
@@ -897,14 +979,25 @@ h6 {
     letter-spacing: 0.18px;
 }
 
+.routes2-img {
+    width: 100%;
+    height: 100%;
+}
+
+.routes2-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
 .route-versions__3 {
     display: flex;
     flex-direction: row;
 }
 
 .route-versions__3_title {
-    width: 585px;
-    height: 440px;
+    width: 90%;
+    height: 100%;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.10);
     padding: 28px;
@@ -957,6 +1050,7 @@ h6 {
 
 .routes3-info-wrap__height {
     display: flex;
+    gap: 8px;
     padding: 6px 20px;
     justify-content: center;
     align-items: center;
@@ -1048,4 +1142,167 @@ h6 {
     line-height: 148%;
     /* 26.64px */
     letter-spacing: 0.18px;
+}
+
+.routes3-img {
+    width: 100%;
+    height: 100%;
+}
+
+.routes3-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.container-routes-about {
+    background: #01594D;
+}
+
+.routes-about {
+    padding-top: 160px;
+}
+
+.routes-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.routes-about__title {
+    color: #FBFBFB;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 19.6px */
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+
+.routes-about__subtitle {
+    color: #FBFBFB;
+    text-align: center;
+
+    /* H2 */
+    font-family: Alumni Sans;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 88%;
+    /* 63.36px */
+}
+
+.routes-about-img-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 16px;
+    padding: 0px 48px;
+    margin-top: 60px;
+}
+
+.routes-about-img-wrap__image1 {
+    width: 30%;
+    height: 640px;
+    /* background: url(/image/stones.png), lightgray 50% / cover no-repeat; */
+}
+
+.routes-about-img-wrap__image2 {
+    width: 70%;
+    height: 640px;
+    /* background: url(/image/tourist.png), lightgray 50% / cover no-repeat; */
+}
+
+.routes-about-img-wrap__image1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.routes-about-img-wrap__image2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.bottom-row {
+    margin-top: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-hire {}
+
+.container-hire-wrapper {
+    position: relative;
+    width: 100%;
+    height: 920px;
+    padding: 0px 48px;
+    /* background: url(/image/знак\ логотип.svg) no-repeat;
+    background-position: 82px 155px;
+    background-size: auto; */
+}
+
+.container-hire-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 20px;
+    /* background: url(/image/tourist-tents-are-green-misty-forest-mountains\ 1.png) no-repeat, url(/image/знак\ логотип.svg) no-repeat, linear-gradient(180deg, #D7E9EB 0%, #EBE8D7 64.34%);
+    background-position: bottom, 82px 250px, 100%;
+    background-size: cover, auto auto, auto auto; */
+    background: linear-gradient(180deg, #D7E9EB 0%, #EBE8D7 64.34%) no-repeat;
+    background-position: 100%;
+    background-size: cover;
+}
+
+.hire-background {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 160px;
+    width: 100%;
+    height: 100%;
+    /* padding: 100px 376px 658px 376px; */
+}
+
+.hire-background__title {
+    color: var(--black, #131415);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.hire-background__subtitle {
+    color: var(--black, #131415);
+    text-align: center;
+    font-family: Alumni Sans;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 88%;
+}
+
+.hire-image img {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    height: 100%;
 }

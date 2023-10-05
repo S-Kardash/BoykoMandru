@@ -12,49 +12,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&display=swap" rel="stylesheet">
-    <script src="/js/main.js"></script>
     <title>Бойко Мандри</title>
 </head>
-<header>
-    <div class="container-header">
-        <div class="logo">
-            <img src="/image/logo.svg" alt="logo">
-        </div>
-        <div class="navigation">
-            <div class="navigation__item">
-                <ul>
-                    <a class="navigation__item__1" href="#">
-                        <li>Маршрути</li>
-                    </a>
-                    <a class="navigation__item__2" href="#">
-                        <li>Послуги</li>
-                    </a>
-                    <a class="navigation__item__3" href="#">
-                        <li>Контакти</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="language-change">
-                <img class="language-change__image-earth" src="/image/language.svg" alt="earth">
-                <p class="language-change__layout">Ua</p>
-                <img class="language-change__image-row" src="/image/language_row.svg" alt="language-row">
-            </div>
-            <div class="contacts-wrap">
-                <a href="tel:+380979146771">
-                    <div class="contacts-wrap__button">
-                        <img class="contacts-wrap__image-phone" src="/image/TelephoneFill.svg" alt="Telephone">
-                        <p class="contacts-wrap__text">+380 97 91 46 771</p>
-                    </div>
-                </a>
-            </div>
-            <div class="menu">
-                <a class="menu__button" href="#">Меню</a>
-            </div>
-        </div>
-    </div>
-</header>
 
 <body>
+    <header>
+        <div class="container-header">
+            <div class="logo">
+                <img loading="lazy" src="/image/logo.svg" alt="logo">
+            </div>
+            <div class="navigation">
+                <div class="navigation__item">
+                    <ul>
+                        <a class="navigation__item__1" href="#">
+                            <li>Маршрути</li>
+                        </a>
+                        <a class="navigation__item__2" href="#">
+                            <li>Послуги</li>
+                        </a>
+                        <a class="navigation__item__3" href="#">
+                            <li>Контакти</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="language-change">
+                    <img loading="lazy" class="language-change__image-earth" src="/image/language.svg" alt="earth">
+                    <p class="language-change__layout">Ua</p>
+                    <img loading="lazy" class="language-change__image-row" src="/image/language-row.svg"
+                        alt="language-row">
+                </div>
+                <div class="contacts-wrap">
+                    <a href="tel:+380979146771">
+                        <div class="contacts-wrap__button">
+                            <img loading="lazy" class="contacts-wrap__image-phone" src="/image/telephone.svg"
+                                alt="Telephone">
+                            <p class="contacts-wrap__text">+380 97 91 46 771</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu">
+                    <a class="menu__button" href="#">Меню</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div class="container-title-wrap">
         <div class="container-title-wrap_2">
             <div class="container-title">
@@ -81,14 +83,18 @@
         </div>
     </div>
     <div class="container-video">
-        <video class="container-video__title-video" controls autoplay loop muted src="/image/Video/grass.mp4"></video>
+        <video controls autoplay loop muted class="container-video__title-video">
+            <source src="/image/Video/grass (video-converter.com).webm" type="video/webm">
+            <source src="/image/Video/grass (video-converter.com).mp4" type="video/mp4">
+        </video>
     </div>
     <div class="container-boyku">
         <div class="container-boyku-wrapper">
             <div class="boyku-wrap">
                 <div class="boyku-title">
                     <div class="boyku-title__accent">
-                        Можливо, вас цікавить
+                        <p>Можливо, вас</p>
+                        <p>цікавить</p>
                     </div>
                     <div class="boyku-title-wrapper">
                         <div class="boyku-title__title">
@@ -104,7 +110,7 @@
                     </div>
                 </div>
                 <div class="container-boyku__map">
-                    <img src="/image/map.svg" alt="map">
+                    <img loading="lazy" src="/image/map.svg" alt="map">
                 </div>
             </div>
         </div>
@@ -131,24 +137,31 @@
                         <div class="emotion-items__item_1s">
                             <div class="item_1s__title">Пізнайте культуру бойків через наші маршрути</div>
                             <a href="#">
-                                <div class="item_1s__img"><img src="/image/items-row.svg" alt=""></div>
+                                <div class="item_1s__img"><img loading="lazy" src="/image/emotions-row.svg" alt="row">
+                                </div>
                             </a>
                         </div>
                     </div>
-                    <div class="emotion-wrapper">
-                        <div class="emotion-items__item_2">
-                            <div class="emotion-items__item_2s">
-                                <p>Насолодіться місцевою кухнею</p>
-                                <img src="/image/vareniky.svg" alt="vareniky">
+                    <div class="emotion-wrapper-wrap">
+                        <div class="emotion-wrapper">
+                            <div class="emotion-items__item_2">
+                                <div class="emotion-items__item_2s">
+                                    <div class="item2-img">
+                                        <p>Насолодіться місцевою кухнею</p>
+                                    </div>
+                                    <!-- <img src="/image/delicious.png" alt="delicious"> -->
+                                </div>
+                            </div>
+                            <div class="emotion-items__item_3">
+                                <div class="emotion-items__item_3s">
+                                    <p>Познайомтесь з безліччю місць</p>
+                                    <img loading="lazy" src="/image/emotions-places.svg" alt="places">
+                                </div>
                             </div>
                         </div>
-                        <div class="emotion-items__item_3">
-                            <div class="emotion-items__item_3s">
-                                <p>Познайомтесь з безліччю місць</p>
-                                <img src="/image/emotion-places.svg" alt="">
-                            </div>
+                        <div class="emotion-items__item_4">
+                            <div class="item4-img"></div>
                         </div>
-                        <div class="emotion-items__item_4"></div>
                     </div>
                 </div>
             </div>
@@ -156,7 +169,7 @@
     </div>
     <div class="container-routes">
         <div class="routes-wrap">
-            <img src="/image/routes-row.svg" alt="row">
+            <img loading="lazy" src="/image/routes-row-top.svg" alt="row">
             <div class="routes-wrap__title-wrap">
                 <div class="routes-wrap__title-wrap_accent">Бойко Мандри — це</div>
                 <div class="routes-wrap__title-wrap_title">Три безкоштовні маршрути горами</div>
@@ -170,7 +183,7 @@
                             <div class="routes1-info-wrap__level">майже легкий</div>
                             <div class="routes1-info-wrap__distance">19 км</div>
                             <div class="routes1-info-wrap__height">
-                                <img src="/image/routes-maki_mountain.svg" alt="">
+                                <img loading="lazy" src="/image/routes-mountain.svg" alt="mountain">
                                 пік — 954 м
                             </div>
                         </div>
@@ -187,12 +200,15 @@
                         <div class="routes1-button-wrap">
                             <div class="routes1-button">
                                 <a href="#">
-                                    <p>Дізнатись більше<img src="/image/routes-button_row.svg" alt="button_row"></p>
+                                    <p>Дізнатись більше<img loading="lazy" src="/image/routes-row-button.svg"
+                                            alt="button_row"></p>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <img src="/image/routes-Ploske.svg" alt="">
+                    <div class="routes1-img">
+                        <img loading="lazy" src="/image/Ploske.jpg" alt="Ploske">
+                    </div>
                 </div>
                 <div class="route-versions__2">
                     <div class="route-versions__2_title">
@@ -200,7 +216,7 @@
                             <div class="routes2-info-wrap__level">для активних</div>
                             <div class="routes2-info-wrap__distance">25 км</div>
                             <div class="routes2-info-wrap__height">
-                                <img src="/image/routes-maki_mountain.svg" alt="">
+                                <img loading="lazy" src="/image/routes-mountain.svg" alt="mountain">
                                 пік — 664 м
                             </div>
                         </div>
@@ -217,12 +233,14 @@
                         <div class="routes2-button-wrap">
                             <div class="routes2-button">
                                 <a href="#">
-                                    <p>Дізнатись більше<img src="/image/routes-button_row.svg" alt="button_row"></p>
+                                    <p>Дізнатись більше<img src="/image/routes-row-button.svg" alt="button_row"></p>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <img src="/image/routes-Nedilna.svg" alt="">
+                    <div class="routes2-img">
+                        <img loading="lazy" src="/image/Nedilna.jpg" alt="Nedilna">
+                    </div>
                 </div>
                 <div class="route-versions__3">
                     <div class="route-versions__3_title">
@@ -230,7 +248,7 @@
                             <div class="routes3-info-wrap__level">для найактивніших</div>
                             <div class="routes3-info-wrap__distance">25 км</div>
                             <div class="routes3-info-wrap__height">
-                                <img src="/image/routes-maki_mountain.svg" alt="">
+                                <img loading="lazy" src="/image/routes-mountain.svg" alt="mountain">
                                 пік — 664 м
                             </div>
                         </div>
@@ -247,17 +265,54 @@
                         <div class="routes3-button-wrap">
                             <div class="routes3-button">
                                 <a href="#">
-                                    <p>Дізнатись більше<img src="/image/routes-button_row.svg" alt="button_row"></p>
+                                    <p>Дізнатись більше<img loading="lazy" src="/image/routes-row-button.svg"
+                                            alt="button_row"></p>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <img src="/image/routes-Magura.svg" alt="">
+                    <div class="routes3-img">
+                        <img loading="lazy" src="/image/Magura.jpg" alt="Magura">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-routes-about">
+        <div class="routes-about">
+            <div class="routes-about-wrapper">
+                <div class="routes-about__title">Наші маршрути</div>
+                <div class="routes-about__subtitle">Це гори, річки з кришталевою водою, свіже повітря та спів пташок.
+                    А ще неймовірно щирі і привітні люди — бойки!</div>
+            </div>
+            <div class="routes-about-img-wrap">
+                <div class="routes-about-img-wrap__image1"><img loading="lazy" src="/image/stones.jpg" alt="stones">
+                </div>
+                <div class="routes-about-img-wrap__image2"><img loading="lazy" src="/image/man-landscape.jpg"
+                        alt="man-landscape">
+                </div>
+            </div>
+        </div>
+        <div class="bottom-row"><img loading="lazy" src="/image/routes-row-bottom.svg" alt="row"></div>
+    </div>
+    <div class="container-hire">
+        <div class="container-hire-wrapper">
+            <div class="container-hire-wrap">
+                <!-- <img src="/image/tents.png" alt="tents"> -->
+                <div class="hire-background">
+                    <div class="hire-background__title">Наша спільнота пропонує</div>
+                    <div class="hire-background__subtitle">
+                        <p>У нас можна замовити прокат</p>
+                        <p>та проведення екскурсій</p>
+                    </div>
+                </div>
+                <div class="hire-image"><img src="/image/tents.png" alt="tents"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
 </body>
+
 <footer></footer>
 
 </html>
