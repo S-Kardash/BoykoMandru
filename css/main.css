@@ -453,7 +453,8 @@ header.hidden {
 .emotion-items__item_1s {
     display: flex;
     flex-direction: row;
-    gap: 28px;
+    padding: 28px;
+    /* gap: 28px; */
     /* width: 379px;
     height: 572px; */
     width: 100%;
@@ -465,12 +466,15 @@ header.hidden {
 }
 
 .emotion-items__item_1s a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
 }
 
 .item_1s__title {
-    margin: 28px 0px 0px 28px;
+    /* margin: 28px 0px 0px 28px; */
     width: 251px;
     height: 96px;
     color: var(--black, #131415);
@@ -489,7 +493,13 @@ header.hidden {
     background: var(--green, #01594D);
     width: 44px;
     height: 44px;
-    margin-top: 28px;
+    /* margin-top: 28px; */
+}
+
+.item_1s__img img {
+    /* width: 18px;
+    height: 18px; */
+    /* text-align: center; */
 }
 
 .emotion-wrapper-wrap {
@@ -1305,4 +1315,182 @@ header.hidden {
     top: 0px;
     width: 100%;
     height: 100%;
+}
+
+.hire-background__button {
+    margin-top: 32px;
+}
+
+.hire-background__button p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    color: var(--white, #FBFBFB);
+    text-align: center;
+    padding: 10px 28px;
+    background: var(--green, #01594D);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 148%;
+    letter-spacing: 0.18px;
+}
+
+.blog-wrap {
+    margin-top: 160px;
+    padding: 0px 185px;
+}
+
+.blog-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blog-head__title {
+    color: var(--black, #131415);
+    font-family: Alumni Sans;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 88%;
+    /* 63.36px */
+}
+
+.blog-head__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-head__button {
+    display: flex;
+    align-items: center;
+}
+
+.blog-head__button p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    color: var(--white, #FBFBFB);
+    text-align: center;
+    padding: 10px 28px;
+    background: var(--green, #01594D);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 148%;
+    letter-spacing: 0.18px;
+}
+
+.blog-elements {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 60px;
+}
+
+.blog-element1 {
+    width: 50%;
+}
+
+.blog-element1__image {
+    width: 100%;
+    height: 322px;
+}
+
+.blog-element1__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.blog-element1__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 36px;
+}
+
+.blog-element1__title {
+    color: var(--black, #131415);
+
+    /* H4 */
+    font-family: Alumni Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 88%;
+    /* 31.68px */
+}
+
+.blog-element1__subtitle {
+    overflow: hidden;
+    color: #1F2023;
+    font-variant-numeric: lining-nums proportional-nums;
+    text-overflow: ellipsis;
+
+    /* text 16 */
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 22.4px */
+    letter-spacing: 0.48px;
+}
+
+.blog-element2 {
+    width: 50%;
+}
+
+.blog-element2__image {
+    width: 100%;
+    height: 322px;
+}
+
+.blog-element2__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.blog-element2__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 36px;
+}
+
+.blog-element2__title {
+    color: var(--black, #131415);
+
+    /* H4 */
+    font-family: Alumni Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 88%;
+    /* 31.68px */
+}
+
+.blog-element2__subtitle {
+    overflow: hidden;
+    color: #1F2023;
+    font-variant-numeric: lining-nums proportional-nums;
+    text-overflow: ellipsis;
+
+    /* text 16 */
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 22.4px */
+    letter-spacing: 0.48px;
 }
