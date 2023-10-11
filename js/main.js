@@ -19,3 +19,24 @@ window.onscroll = () => {
 
     lastScrollPosition = currentScrollPosition;
 };
+
+var container = document.querySelector('.instagram-elements');
+
+container.addEventListener('mousedown', function (e) {
+    // Запам'ятовуємо початкові координати миші
+    var startX = e.pageX - container.scrollLeft;
+
+    container.addEventListener('mousemove', function (e) {
+        // Розраховуємо нове положення прокрутки
+        var scrollX = startX - e.pageX;
+
+        // Встановлюємо положення прокрутки
+        container.scrollLeft = scrollX;
+    });
+
+    container.addEventListener('mouseup', function () {
+        // Видаляємо обробник подій, коли мишка відпускається
+        container.removeEventListener('mousemove', null);
+        container.removeEventListener('mouseup', null);
+    });
+});
