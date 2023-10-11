@@ -745,6 +745,8 @@ header.hidden {
 .route-versions__1 {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 
 .route-versions__1_title {
@@ -910,6 +912,8 @@ header.hidden {
 .route-versions__2 {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 
 .route-versions__2_title {
@@ -1075,6 +1079,8 @@ header.hidden {
 .route-versions__3 {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 
 .route-versions__3_title {
@@ -1357,6 +1363,8 @@ header.hidden {
 }
 
 .hire-background__title {
+    display: flex;
+    justify-content: center;
     color: var(--black, #131415);
     font-variant-numeric: lining-nums proportional-nums;
     font-family: Raleway;
@@ -1568,7 +1576,7 @@ header.hidden {
 .aboutus-wrap {
     display: flex;
     flex-direction: row;
-    gap: 70px;
+    justify-content: space-between;
     margin-top: 160px;
     padding: 0px 185px;
 }
@@ -1577,6 +1585,7 @@ header.hidden {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 523px;
 }
 
 .aboutus-text__accent {
@@ -1643,6 +1652,7 @@ header.hidden {
 
 .aboutus-image {
     width: 100%;
+    height: 100%;
 }
 
 .aboutus-image img {
@@ -1928,4 +1938,10 @@ header.hidden {
     line-height: 140%;
     /* 19.6px */
     letter-spacing: 0.14px;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 1.5s ease, transform 2s ease;
 }

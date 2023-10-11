@@ -40,3 +40,20 @@ container.addEventListener('mousedown', function (e) {
         container.removeEventListener('mouseup', null);
     });
 });
+
+
+const elements = document.querySelectorAll('.animate-on-scroll');
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            // Виконати анімацію, коли елемент стає видимим
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+});
+
+elements.forEach((element) => {
+    observer.observe(element);
+});
