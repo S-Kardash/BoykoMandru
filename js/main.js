@@ -20,26 +20,23 @@ window.onscroll = () => {
     lastScrollPosition = currentScrollPosition;
 };
 
-var container = document.querySelector('.instagram-elements');
+const container = document.querySelector('.instagram-elements-container');
+const elementContainer = document.querySelector('.instagram-elements');
 
-container.addEventListener('mousedown', function (e) {
-    // Запам'ятовуємо початкові координати миші
-    var startX = e.pageX - container.scrollLeft;
-
-    container.addEventListener('mousemove', function (e) {
-        // Розраховуємо нове положення прокрутки
-        var scrollX = startX - e.pageX;
-
-        // Встановлюємо положення прокрутки
-        container.scrollLeft = scrollX;
-    });
-
-    container.addEventListener('mouseup', function () {
-        // Видаляємо обробник подій, коли мишка відпускається
-        container.removeEventListener('mousemove', null);
-        container.removeEventListener('mouseup', null);
-    });
+container.addEventListener('mouseenter', () => {
+    container.style.animationPlayState = 'paused';
 });
+
+container.addEventListener('mouseleave', () => {
+    container.style.animationPlayState = 'running';
+});
+
+// Додайте цей код для додавання втрачених елементів
+container.addEventListener('animationiteration', () => {
+    const clonedElement = elementContainer.firstElementChild.cloneNode(true);
+    elementContainer.appendChild(clonedElement);
+});
+
 
 
 const elements = document.querySelectorAll('.animate-on-scroll');
