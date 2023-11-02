@@ -277,7 +277,7 @@ header.hidden {
 }
 
 .container-title__title {
-    /* width: 575px; */
+    width: 575px;
     color: #1F2023;
     font-family: Alumni Sans;
     font-size: 76px;
@@ -290,18 +290,18 @@ header.hidden {
 .container-title__wrapper {
     display: flex;
     flex-direction: column;
+    width: max-content;
     /* margin: 80px 185px 0px 0px; */
     /* padding-right: 185px; */
 }
 
 .container-title__subtitle {
-    /* width: 440px; */
+    width: 440px;
     color: #1F2023;
     font-family: Raleway;
     font-size: 18px;
     font-weight: 600;
     line-height: 140%;
-    /* 22.4px */
     letter-spacing: 0.16px;
     margin-top: 12px;
 }
@@ -311,6 +311,7 @@ header.hidden {
     flex-direction: row;
     gap: 17px;
     margin-top: 24px;
+    width: max-content;
 }
 
 .title-button-wrap__container {
@@ -372,6 +373,7 @@ header.hidden {
 } */
 
 .title-button-wrap__info {
+    width: 120px;
     color: var(--black, #131415);
     font-family: Raleway;
     font-size: 15px;
@@ -2013,7 +2015,7 @@ header.hidden {
 .instagram-elements {
     margin-top: 60px;
     display: flex;
-    animation: scroll 15s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 
 .instagram-elements__element {
@@ -2166,14 +2168,11 @@ header.hidden {
     align-items: center;
     gap: 12px;
     color: var(--white, #FBFBFB);
-
-    /* H4 */
     font-family: Alumni Sans;
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
     line-height: 88%;
-    /* 31.68px */
 }
 
 .footer-contacts__email {
@@ -2282,14 +2281,206 @@ header.hidden {
     transition: opacity 1.5s ease, transform 2s ease;
 }
 
-@media screen and (max-width: 1446px) {
-    .container-title__title p {
-        font-size: 64px;
-    }
+/* -------------------------------------------------- */
 
-    .container-title__subtitle {
+
+.mobile-header {
+    background-color: #01594D;
+    display: none;
+    flex-direction: row;
+}
+
+.header-info {
+    width: 100%;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: row;
+    gap: 240px;
+    padding: 68px 0px 68px 60px;
+}
+
+.header-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-text a {
+    color: var(--white, #FBFBFB);
+    font-family: Alumni Sans;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 88%;
+}
+
+.header-text a:hover {
+    text-decoration: underline;
+    color: var(--light-green, #CFE8D0);
+}
+
+.header-white-line {
+    border: none;
+    height: 1px;
+    opacity: 0.3;
+    background: var(--white, #FBFBFB);
+    margin: 0px 48px;
+}
+
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+    padding: 50px 60px;
+}
+
+.header-navigation a:hover {
+    text-decoration: underline;
+    color: var(--light-green, #CFE8D0);
+}
+
+.header-navigation :last-child {
+    justify-content: end;
+}
+
+.header-contacts__phone {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--white, #FBFBFB);
+    font-family: Alumni Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 88%;
+    min-width: 228px;
+}
+
+.header-contacts__email {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--white, #FBFBFB);
+    font-family: Alumni Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 88%;
+}
+
+.header-social-networks {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.header-social-networks__instagram {
+    border-radius: 100px;
+    background: rgba(251, 251, 251, 0.10);
+    padding: 16px;
+    transition: background-color 0.3s ease-in;
+}
+
+.header-social-networks__instagram:hover {
+    background: #FFF;
+    padding: 16.5px;
+}
+
+.header-social-networks__instagram:hover img {
+    content: url(/image/icon-footer-instagram-green.svg);
+}
+
+.header-social-networks__facebook {
+    border-radius: 100px;
+    background: rgba(251, 251, 251, 0.10);
+    padding: 16px;
+    transition: background-color 0.3s ease-in;
+}
+
+.header-social-networks__facebook:hover {
+    background: #FFF;
+    padding: 16px 20px;
+    border-radius: 100px;
+}
+
+.header-social-networks__facebook:hover img {
+    content: url(/image/icon-footer-facebook-green.svg);
+}
+
+.header-language-change {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-language-change__image-earth {}
+
+.header-language-change__layout {
+    color: var(--white, #FBFBFB);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 148%;
+    letter-spacing: 0.16px;
+}
+
+
+.header-language-change__image-row {}
+
+.header-image-wrap {
+    width: 34%;
+    background-image: url(/image/mobile-header-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/logo-mobile-header.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.close-icon {
+    width: 48px;
+    height: 48px;
+    margin: 28px 28px 0px 0px;
+}
+
+.close-icon img {
+    padding: 16px;
+    background-color: var(--light-green, #CFE8D0);
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    transition: background-color 0.3s ease-in;
+}
+
+.close-icon img:hover {
+    background-color: rgba(207, 232, 208, 0.80);
+}
+
+/* -------------------------------------------------- */
+
+@media screen and (max-width: 1446px) {
+    /* .container-title__title p {
+        font-size: 64px;
+    } */
+
+    /* .container-title__subtitle {
         font-size: 16px;
-    }
+    } */
 }
 
 @media screen and (max-width: 1441px) {
@@ -2424,6 +2615,14 @@ header.hidden {
 }
 
 @media screen and (max-width: 1025px) {
+    .container-title__title {
+        width: 495px;
+    }
+
+    .container-title__subtitle {
+        width: 350px;
+    }
+
     .footer-content {
         padding: 65px 45px;
     }
@@ -2597,5 +2796,85 @@ header.hidden {
 
     .instagram-head__button p {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 995px) {
+
+    .navigation__item {
+        display: none;
+    }
+
+    .language-change {
+        display: none;
+    }
+
+    .contacts-wrap {
+        display: none;
+    }
+
+    .footer-contacts {
+        margin-left: 50px;
+    }
+
+    .footer-navigation {
+        margin-left: 50px;
+    }
+
+    .container-title__title p {
+        font-size: 50px;
+    }
+
+    .container-title__subtitle {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .logo {
+        margin: 20px 0px 20px 32px;
+    }
+
+    .menu {
+        margin-right: 32px;
+    }
+
+    .container-title-wrap_2 {
+        padding: 0px 32px;
+    }
+
+    .container-title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .container-title__title {
+        font-size: 52px;
+        color: var(--black, #131415);
+        font-family: Alumni Sans;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 88%;
+        align-self: stretch;
+        text-align: center;
+        width: auto;
+    }
+
+    .container-title__subtitle {
+        font-size: 16px;
+    }
+
+    .container-title__wrapper {
+        padding: 0px 32px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-button-wrap {
+        flex-direction: column;
     }
 }
