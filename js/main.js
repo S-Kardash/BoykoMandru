@@ -75,3 +75,44 @@ closeButton.addEventListener("click", function () {
     blockToClose1.style.display = "flex";
     blockToClose.style.display = "none";
 });
+
+const button = document.getElementById("instagram-head__button");
+const containerInst = document.getElementById("instagram-elements-container");
+const head = document.querySelector(".instagram-head");
+
+let isMobileView = false;
+
+function reorderButton() {
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    if (viewportWidth < 426 && !isMobileView) {
+        containerInst.appendChild(button);
+        isMobileView = true;
+    } else if (viewportWidth >= 426 && isMobileView) {
+        head.appendChild(button);
+        isMobileView = false;
+    }
+}
+
+// Викликати функцію при завантаженні сторінки та при зміні розміру вікна
+window.addEventListener("load", reorderButton);
+window.addEventListener("resize", reorderButton);
+
+function removeBrElements() {
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    const subtitleElements = document.querySelectorAll(".routes-about__subtitle");
+
+    if (viewportWidth < 426) {
+        subtitleElements.forEach((subtitleElement) => {
+            const brElements = subtitleElement.querySelectorAll("br");
+
+            brElements.forEach((brElement) => {
+                brElement.remove();
+            });
+        });
+    }
+}
+
+// Викликати функцію при завантаженні сторінки та при зміні розміру вікна
+window.addEventListener("load", removeBrElements);
+window.addEventListener("resize", removeBrElements);
