@@ -2941,6 +2941,10 @@ header.hidden {
         line-height: 88%;
     }
 
+    p.subtitle-padding {
+        font-size: 16px;
+    }
+
     .boyku-title__subtitle {
         padding: 0px;
         margin-top: 28px;
@@ -3388,5 +3392,189 @@ header.hidden {
 
     .container-footer :where(.white-line) {
         margin: 60px 10px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .logo img {
+        width: 158px;
+        height: 48px;
+    }
+
+    .menu__button {
+        padding: 12.5px 19.70px;
+    }
+
+    a.menu__button :where(span) {
+        color: var(--green, #01594D);
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 148%;
+        letter-spacing: 0.14px;
+    }
+
+    .container-title__title p {
+        font-size: 48px;
+    }
+
+    .container-title__wrapper {
+        width: 300px;
+    }
+
+    .container-title__subtitle {
+        width: 300px;
+    }
+
+    .container-title__subtitle {
+        width: 300px;
+    }
+
+    .boyku-title {
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .boyku-title * {
+        width: 300px;
+    }
+
+    .boyku-title__title p {
+        color: var(--black, #131415);
+        font-family: Alumni Sans;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 88%;
+        width: 300px;
+    }
+
+    .emotions-title__title {
+        width: 300px;
+    }
+
+    .emotions-title__title p {
+        color: var(--black, #131415);
+        font-family: Alumni Sans;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 88%;
+        width: 300px;
+    }
+
+    .emotion-items {
+        padding: 0px;
+    }
+
+    .emotion-items__item_1 {
+        width: 300px;
+        height: 452px;
+    }
+
+    .emotion-items__item_2 {
+        width: 300px;
+        height: 220px;
+    }
+
+    .emotion-items__item_3 {
+        width: 300px;
+        height: 220px;
+    }
+
+    .emotion-items__item_4 {
+        width: 300px;
+        height: 220px;
+    }
+
+    .routes-wrap__title-wrap_title {
+        font-size: 44px;
+    }
+
+    .route-versions :where(div.routes1-title, div.routes2-title, div.routes3-title) {
+        font-size: 40px;
+    }
+
+    .routes3-info-wrap__distance {
+        position: absolute;
+        top: 70px;
+    }
+
+    .routes3-info-wrap__height {
+        left: 118px;
+    }
+
+    .routes-about__subtitle p {
+        font-size: 40px;
+    }
+
+    .routes-about-img-wrap__image1 {
+        height: 459px;
+    }
+
+    .routes-about-img-wrap__image2 {
+        height: 190px;
+    }
+
+    .bottom-row {
+        margin-top: 86px;
+    }
+
+    .hire-background__title {
+        padding: 0px;
+        margin-top: 72px;
+    }
+
+    .hire-background {
+        margin-top: 118px;
+    }
+
+    .container-hire-wrap {
+        height: 640px;
+    }
+
+    .aboutus-wrap {
+        margin-top: 35px;
+    }
+
+    .aboutus-text__subtitle {
+        width: 300px;
+        padding: 0px;
+    }
+
+    .instagram-head__title {
+        font-size: 44px;
+    }
+
+    .instagram-elements {
+        margin-top: 48px;
+    }
+
+    .instagram-wrap {
+        margin-top: 120px;
+    }
+
+    .footer-logos__main {
+        width: 220px;
+        height: 65px;
+    }
+
+    .footer-logos__main-info {
+        margin-top: 20px;
+    }
+
+    .footer-logos__partner-info {
+        font-size: 12px;
+    }
+
+    .footer-logos__partner {
+        width: 300px;
+    }
+
+    .footer-logos__partner img {
+        width: 49%;
     }
 }
