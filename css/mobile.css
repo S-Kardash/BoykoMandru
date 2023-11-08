@@ -185,7 +185,7 @@
     }
 
     .item4-img {
-        background: url(/image/mobile-emotions-item4-img.jpg);
+        background: url(/image/mobile-emotions-item4-img.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -334,7 +334,7 @@
     }
 
     .hire-image img {
-        content: url(/image/mobile-hire-back.jpg);
+        content: url(/image/mobile-hire-back.webp);
     }
 
     .aboutus-wrap {
