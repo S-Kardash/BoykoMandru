@@ -813,11 +813,11 @@ document.addEventListener('DOMContentLoaded', function () {
         var aboutUsTitleTranslateElement = document.getElementById('aboutUsTitleTranslate');
         aboutUsTitleTranslateElement.textContent = i18next.t('aboutUsTitleTranslate');
 
-        var InstTitleTranslateElement = document.getElementById('InstTitleTranslate');
-        InstTitleTranslateElement.textContent = i18next.t('InstTitleTranslate');
-
         var aboutUsSubtitleTranslateElement = document.getElementById('aboutUsSubtitleTranslate');
         aboutUsSubtitleTranslateElement.textContent = i18next.t('aboutUsSubtitleTranslate');
+
+        var InstTitleTranslateElement = document.getElementById('InstTitleTranslate');
+        InstTitleTranslateElement.textContent = i18next.t('InstTitleTranslate');
     }
 
     function updateSelectTrigger() {
