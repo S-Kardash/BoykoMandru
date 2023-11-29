@@ -826,7 +826,8 @@ document.addEventListener('DOMContentLoaded', function () {
             trigger.textContent = i18next.t(getSavedLanguage() || 'Ua');
         });
         selectTriggers.forEach(function (trigger) {
-            trigger.innerText = i18next.t(value);
+            // Виберіть один з варіантів (innerText або innerHTML) в залежності від вашого вибору
+            trigger.innerText = i18next.t(value); // або trigger.innerHTML = i18next.t(value);
         });
     }
 
