@@ -113,6 +113,47 @@ function removeBrElements() {
     }
 }
 
-// Викликати функцію при завантаженні сторінки та при зміні розміру вікна
-window.addEventListener("load", removeBrElements);
-window.addEventListener("resize", removeBrElements);
+// // Викликати функцію при завантаженні сторінки та при зміні розміру вікна
+// window.addEventListener("load", removeBrElements);
+// window.addEventListener("resize", removeBrElements);
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     var customSelect = document.querySelector('.custom-select');
+
+//     customSelect.addEventListener('click', function () {
+//         this.classList.toggle('active');
+//     });
+
+//     var selectOptions = document.querySelectorAll('.select-options li');
+
+//     selectOptions.forEach(function (option) {
+//         option.addEventListener('click', function () {
+//             var value = this.getAttribute('data-value');
+//             // Обробка вибору значення
+//             console.log(value);
+//             customSelect.querySelector('.select-trigger').textContent = this.textContent;
+//             customSelect.classList.remove('active');
+//         });
+//     });
+// });
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     var customSelect = document.querySelector('.custom-select');
+//     var languageImageRow = document.querySelector('.language-change__image-row');
+
+//     languageImageRow.addEventListener('click', function () {
+//         customSelect.classList.toggle('active');
+//     });
+
+//     var selectOptions = document.querySelectorAll('.select-options li');
+
+//     selectOptions.forEach(function (option) {
+//         option.addEventListener('click', function () {
+//             var value = this.getAttribute('data-value');
+//             console.log(value);
+//             customSelect.querySelector('.select-trigger').textContent = this.textContent;
+//             customSelect.classList.remove('active');
+//         });
+//     });
+// });

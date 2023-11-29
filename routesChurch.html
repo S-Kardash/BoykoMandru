@@ -17,25 +17,33 @@
     <header>
         <div id="container-header" class="container-header">
             <div class="logo">
-                <img src="/image/logo.svg" alt="logo">
+                <a href="index.html"><img src="/image/logo.svg" alt="logo"></a>
             </div>
             <div class="navigation">
                 <div class="navigation__item">
                     <ul>
                         <a class="navigation__item__1" href="routes.html">
-                            <li>Маршрути</li>
+                            <li class="routes">Маршрути</li>
                         </a>
                         <a class="navigation__item__2" href="#">
-                            <li>Послуги</li>
+                            <li class="services">Послуги</li>
                         </a>
                         <a class="navigation__item__3" href="#">
-                            <li>Контакти</li>
+                            <li class="contacts">Контакти</li>
                         </a>
                     </ul>
                 </div>
                 <div class="language-change">
                     <img loading="lazy" class="language-change__image-earth" src="/image/language.svg" alt="earth">
-                    <p class="language-change__layout">Ua</p>
+                    <!-- <p class="language-change__layout">Ua</p> -->
+                    <div class="custom-select">
+                        <div class="select-trigger"></div>
+                        <ul class="select-options">
+                            <li data-value="Ua">Ua</li>
+                            <li data-value="Pol">Pol</li>
+                            <li data-value="Eng">Eng</li>
+                        </ul>
+                    </div>
                     <img loading="lazy" class="language-change__image-row" src="/image/language-row.svg"
                         alt="language-row">
                 </div>
@@ -50,7 +58,7 @@
                 </div>
                 <div id="menu" class="menu">
                     <a href="#" class="menu__button">
-                        <span>Меню</span>
+                        <span class="menuText">Меню</span>
                     </a>
                 </div>
             </div>
@@ -59,19 +67,19 @@
             <div class="header-info">
                 <div class="header-text">
                     <ul>
-                        <a href="#">Маршрути</a>
-                        <a href="#">Послуги</a>
-                        <a href="#">Як доїхати</a>
-                        <a href="#">Контакти</a>
+                        <a href="#" class="routes">Маршрути</a>
+                        <a href="#" class="services">Послуги</a>
+                        <a href="#" class="howToGet">Як доїхати</a>
+                        <a href="#" class="contacts">Контакти</a>
                     </ul>
                     <ul>
-                        <a href="#">
+                        <a href="#" class="attractions">
                             Пам'ятки
                         </a>
-                        <a href="#">
+                        <a href="#" class="aboutUs">
                             Про нас
                         </a>
-                        <a href="#">
+                        <a href="#" class="blogAndEvents">
                             Блог та події
                         </a>
                     </ul>
@@ -105,8 +113,16 @@
                     <div class="header-language-change">
                         <img loading="lazy" class="header-language-change__image-earth" src="/image/Globe.svg"
                             alt="earth">
-                        <p class="header-language-change__layout">Ua</p>
-                        <img loading="lazy" class="header-language-change__image-row" src="/image/mobile-header-row.svg"
+                        <!-- <p class="header-language-change__layout">Ua</p> -->
+                        <div class="custom-select">
+                            <div class="select-trigger" style="font-family: Raleway; color:#FFF;">Ua</div>
+                            <ul class="select-options">
+                                <li data-value="Ua">Ua</li>
+                                <li data-value="Eng">Eng</li>
+                                <li data-value="Pol">Pol</li>
+                            </ul>
+                        </div>
+                        <img loading="lazy" class="language-change__image-row" src="/image/mobile-header-row.svg"
                             alt="language-row">
                     </div>
                 </div>
@@ -121,11 +137,11 @@
         </div>
     </header>
     <div class="page-navigation">
-        <p class="page-navigation__main"><a href="index.html">Головна</a></p>
+        <p class="page-navigation__main"><a class="NavMain" href="index.html">Головна</a></p>
         <p class="page-navigation__row">></p>
-        <p class="page-navigation__routes"><a href="routes.html">Маршрути</a></p>
+        <p class="page-navigation__routes"><a class="NavRoutes" href="routes.html">Маршрути</a></p>
         <p class="page-navigation__row">></p>
-        <p class="page-navigation__route1"><a href="routesChurch.html">Маршрут 1</a></p>
+        <p class="page-navigation__route1"><a class="NavRoute1" href="routesChurch.html">Маршрут 1</a></p>
     </div>
     <div class="container-Church">
         <div class="route-wrap">
@@ -136,34 +152,40 @@
                 <div class="route-versions__1">
                     <div class="route-versions__1_title">
                         <div class="routes1-info-wrap">
-                            <div class="routes1-info-wrap__level">майже легкий</div>
-                            <div class="routes1-info-wrap__distance">19 км</div>
+                            <div class="routes1-info-wrap__level">
+                                <p class="levelTranslate1">майже легкий</p>
+                            </div>
+                            <div class="routes1-info-wrap__distance">
+                                <p class="distanceTranslate1">19 км</p>
+                            </div>
                             <div class="routes1-info-wrap__height">
                                 <img loading="lazy" src="/image/routes-mountain.svg" alt="mountain">
-                                пік — 954 м
+                                <p class="heightTranslate1">пік — 954 м</p>
                             </div>
                         </div>
                         <div class="rotes1-title-wrap">
                             <div class="routes1-title">
-                                <p class="routes1-title__accent">Маршрут 1</p>
-                                <p>До криївки у церкві</p>
+                                <p class="routes1-title__accent"><span class="route1NumTranslate">Маршрут 1</span></p>
+                                <p class="route1Translate">До криївки в церкві</p>
                             </div>
                             <div class="routes1-line">
                                 <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo">
-                                <p>Стрілки</p>
+                                <p class="Strilky">Стрілки</p>
                                 <div class="line"></div>
                                 <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo">
-                                <p>Тисовиця</p>
+                                <p class="Tysovytsia">Тисовиця</p>
                                 <div class="line"></div>
                                 <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo">
-                                <p>Плоске</p>
+                                <p class="Ploske">Плоске</p>
                                 <div class="line"></div>
                                 <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo">
-                                <p>Мшанець</p>
+                                <p class="Mshanets">Мшанець</p>
                             </div>
                             <div class="routes1-subtitle">
-                                Погойдатись на карпатській гойдалці, смачно поїсти, знайти криївку в церкві і
-                                переночувати серед гір!
+                                <p class="route1SubtitleTranslate">
+                                    Погойдатись на карпатській гойдалці, смачно поїсти, знайти криївку в церкві і
+                                    переночувати у справжніх колибах!
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -196,10 +218,11 @@
         <div class="animate-on-scroll">
             <div class="element">
                 <div class="container-station-subtitle">
-                    <h2>Церква Святої прп. Параскевії (Сербської)</h2>
+                    <h2 class="subtitle1translate">Церква Святої прп. Параскевії (Сербської)</h2>
                 </div>
                 <div class="container-station-paragraph">
-                    <p>Ця тризрубна триверха церква належить до найкращих зразків сакральних споруд бойківського типу
+                    <p class="parag1Translate">Ця тризрубна триверха церква належить до найкращих зразків сакральних
+                        споруд бойківського типу
                         Старосамбірщини. У ній ще позначився вплив бароко у формах верхів і бань. На захід від церкви
                         розташована дерев'яна триярусна дзвіниця ХІХ ст., всередині храму — оригінальний п’ятиярусний
                         іконостас рядової побудови ХІХ ст.</p>
@@ -215,7 +238,7 @@
                         <div class="info-ChurchIMG"><img src="/image-page-routesChurch/Church-info.png" alt="Church">
                         </div>
                         <div class="wrap-info">
-                            <h4>Більше інформації про цю пам’ятку</h4>
+                            <h4 class="moreAboutAttractions">Більше інформації про цю пам’ятку</h4>
                             <a href="#"><img src="/image/emotions-row.svg" alt="row"></a>
                         </div>
                     </div>
@@ -242,10 +265,11 @@
         <div class="animate-on-scroll">
             <div class="element">
                 <div class="container-station-subtitle">
-                    <h2>Село Тисовиця</h2>
+                    <h2 class="subtitle2translate">Село Тисовиця</h2>
                 </div>
                 <div class="container-station-paragraph">
-                    <p>Село Тисовиця засноване на сирому корені вольським правом 1558 р. Староста Петро Боратинський
+                    <p class="parag2Translate">Село Тисовиця засноване на сирому корені вольським правом 1558 р.
+                        Староста Петро Боратинський
                         доручив
                         крайнику Осташу Дашковичу осадити село, надаючи йому водночас право на парохію 17 квітня того ж
                         року.</p>
@@ -279,10 +303,11 @@
         <div class="animate-on-scroll">
             <div class="element">
                 <div class="container-station-subtitle">
-                    <h2>Вид на гору Магура</h2>
+                    <h2 class="subtitle3translate">Вид на гору Магура</h2>
                 </div>
                 <div class="container-station-paragraph">
-                    <p>Магурою у Карпатах називають гору з вершиною, що повністю вкрита лісом та має висоту 1362,7 м.
+                    <p class="parag3Translate">Магурою у Карпатах називають гору з вершиною, що повністю вкрита лісом та
+                        має висоту 1362,7 м.
                         Вважається, що назва походить від румунського слова, яке означає «горб, підвищення, курган».</p>
                 </div>
             </div>
@@ -314,10 +339,11 @@
         <div class="animate-on-scroll">
             <div class="element">
                 <div class="container-station-subtitle">
-                    <h2>Село Плоске та хутір Ворьовий</h2>
+                    <h2 class="subtitle4translate">Село Плоске та хутір Ворьовий</h2>
                 </div>
                 <div class="container-station-paragraph">
-                    <p>Хутір Ворьовий (або «Під Оровим») розташований на верхівці хребта Орового у масиві
+                    <p class="parag4Translate">Хутір Ворьовий (або «Під Оровим») розташований на верхівці хребта Орового
+                        у масиві
                         Верхньодністровські Бескиди. Ймовірно, це найвисотніший хутір на Старосамбірщині. Є присілком
                         села
                         Плоске, яке було засноване у 1526 р.</p>
@@ -352,10 +378,11 @@
         <div class="animate-on-scroll">
             <div class="element">
                 <div class="container-station-subtitle">
-                    <h2>Криївка в церкві Св. Архистратига Михаїла у селі Плоскім</h2>
+                    <h2 class="subtitle5translate">Криївка в церкві Св. Архистратига Михаїла у селі Плоскім</h2>
                 </div>
                 <div class="container-station-paragraph">
-                    <p>Найдавніша збережена письмова згадка датується 1546 р., коли королева Бона надала парохію
+                    <p class="parag5Translate">Найдавніша збережена письмова згадка датується 1546 р., коли королева
+                        Бона надала парохію
                         священнику
                         Матвію. Сучасна будівля церкви збудована у 1903 р. в неоукраїнському стилі, належить до
                         найкращих
@@ -373,7 +400,7 @@
                                 alt="Church">
                         </div>
                         <div class="wrap-info">
-                            <h4>Більше інформації про цю пам’ятку</h4>
+                            <h4 class="moreAboutAttractions">Більше інформації про цю пам’ятку</h4>
                             <a href="#"><img src="/image/emotions-row.svg" alt="row"></a>
                         </div>
                     </div>
@@ -400,10 +427,11 @@
         <div class="animate-on-scroll">
             <div class="element">
                 <div class="container-station-subtitle">
-                    <h2>Ліс «Вінець»</h2>
+                    <h2 class="subtitle6translate">Ліс «Вінець»</h2>
                 </div>
                 <div class="container-station-paragraph">
-                    <p>Село Галівка, що знаходиться за лісом «Вінець», та довколишні села характерні наявністю багатьох
+                    <p class="parag6Translate">Село Галівка, що знаходиться за лісом «Вінець», та довколишні села
+                        характерні наявністю багатьох
                         повстанських криївок, що розміщувалися прямо в хатах.</p>
                 </div>
             </div>
@@ -435,10 +463,11 @@
         <div class="animate-on-scroll">
             <div class="element">
                 <div class="container-station-subtitle">
-                    <h2>Еко-табір «Мшанецькі Колиби»</h2>
+                    <h2 class="subtitle7translate">Еко-табір «Мшанецькі Колиби»</h2>
                 </div>
                 <div class="container-station-paragraph">
-                    <p>Це соціальне підприємництво релігійної громади Різдва Пресвятої Богородиці УГКЦ с. Мшанець,
+                    <p class="parag7Translate">Це соціальне підприємництво релігійної громади Різдва Пресвятої
+                        Богородиці УГКЦ с. Мшанець,
                         засноване
                         у 2019 р. Його метою є соціальний, духовний та економічний розвиток краю шляхом створення
                         успішних
@@ -464,16 +493,19 @@
                 <!-- <img src="/image/tents.png" alt="tents"> -->
                 <div class="hire-background">
                     <div class="animate-on-scroll">
-                        <div class="hire-background__title">Наша спільнота пропонує</div>
+                        <div class="hire-background__title">
+                            <p class="hireTitleTranslate">Наша спільнота пропонує</p>
+                        </div>
                         <div class="hire-background__subtitle">
-                            <p>У нас можна замовити прокат
+                            <p class="hireSubtitleTranslate">У нас можна замовити прокат
                                 та проведення екскурсій</p>
                         </div>
                     </div>
                     <div class="animate-on-scroll">
                         <a href="#">
                             <div class="hire-background__button">
-                                <p>Дізнатись більше<img src="/image/emotions-row.svg" alt="button_row"></p>
+                                <p><span class="routesButton">Дізнатись більше</span><img src="/image/emotions-row.svg"
+                                        alt="button_row"></p>
                             </div>
                         </a>
                     </div>
@@ -488,11 +520,13 @@
                 <div class="footer-content">
                     <div class="footer-logos">
                         <div class="footer-logos__main"><img src="/image/logo-footer.svg" alt="logo"></div>
-                        <div class="footer-logos__main-info">БойкоМандри: туристичні маршрути Стрілківської громади
+                        <div class="footer-logos__main-info">
+                            <p class="footerMainTransalte">БойкоМандри: туристичні маршрути Стрілківської громади</p>
                         </div>
-                        <div class="footer-logos__partner-info">Проєкт реалізується за підтримки Українського
-                            культурного
-                            фонду та Стрілківської сільської ради</div>
+                        <div class="footer-logos__partner-info">
+                            <p class="footerPartnerTransalte">Проєкт реалізується за підтримки Українського культурного
+                                фонду та Стрілківської сільської ради</p>
+                        </div>
                         <div class="footer-logos__partner">
                             <img src="/image/UCF-logo.svg" alt="logo">
                             <img src="/image/Strilku-logo.svg" alt="logo">
@@ -501,30 +535,27 @@
                     <div class="footer-navigation">
                         <div class="footer-navigation__column1">
                             <a href="routes.html">
-                                <p>Маршрути</p>
+                                <p class="routes">Маршрути</p>
                             </a>
                             <a href="#">
-                                <p>Послуги</p>
+                                <p class="services">Послуги</p>
                             </a>
                             <a href="#">
-                                <p>Як доїхати</p>
+                                <p class="howToGet">Як доїхати</p>
                             </a>
                             <a href="#">
-                                <p>Контакти</p>
+                                <p class="contacts">Контакти</p>
                             </a>
                         </div>
                         <div class="footer-navigation__column2">
                             <a href="#">
-                                <p>Пам'ятки</p>
+                                <p class="attractions">Пам'ятки</p>
                             </a>
                             <a href="#">
-                                <p>Про нас</p>
+                                <p class="aboutUs">Про нас</p>
                             </a>
                             <a href="#">
-                                <p>Події</p>
-                            </a>
-                            <a href="#">
-                                <p>Блог</p>
+                                <p class="blogAndEvents"> Блог та події</p>
                             </a>
                         </div>
                     </div>
@@ -559,13 +590,21 @@
             </div>
             <div class="white-line"></div>
             <div class="footer-bottom">
-                <div class="footer-bottom__laws">Усі права захищені</div>
-                <div class="footer-bottom__politic">Політика конфідеційності</div>
-                <div class="footer-bottom__designer">Дизайнер: Барабаш Анастасія</div>
+                <div class="footer-bottom__laws">
+                    <p class="footerLawsTranslate">Усі права захищені</p>
+                </div>
+                <div class="footer-bottom__politic">
+                    <p class="footerPoliticTranslate">Політика конфіденційності</p>
+                </div>
+                <div class="footer-bottom__designer">
+                    <p class="footerDesignerTranslate">Дизайнер: Барабаш Анастасія</p>
+                </div>
             </div>
         </div>
     </footer>
     <script src="/js/routesChurch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+    <script src="/js/langChange.js"></script>
 </body>
 
 </html>

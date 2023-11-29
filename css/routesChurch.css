@@ -160,6 +160,67 @@ header.hidden {
     letter-spacing: 0.14px;
 }
 
+.language-change__image-row {
+    cursor: pointer;
+}
+
+.custom-select {
+    position: relative;
+    /* width: 200px; */
+    /* Встановіть ширину за вашим смаком */
+}
+
+.select-trigger {
+    /* padding: 10px; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    /* cursor: pointer; */
+    color: var(--black, #131415);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 148%;
+    letter-spacing: 0.16px;
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -30%;
+    width: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+    /* z-index: 20; */
+}
+
+.select-options li {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 148%;
+    letter-spacing: 0.16px;
+}
+
+/* Показуємо випадаючий список при натисканні */
+.custom-select.active .select-options {
+    display: block;
+}
+
 .contacts-wrap {
     display: flex;
     flex-direction: row;
@@ -1590,3 +1651,47 @@ header.hidden {
 }
 
 /* -------------------------HIRE--------------------------- */
+
+@media screen and (max-width: 1300px) {
+    .container-station-subtitle {
+        padding: 0px 200px;
+    }
+
+    .container-station-paragraph {
+        padding: 0px 200px;
+    }
+
+    .container-station-img {
+        padding: 0px 60px;
+    }
+
+    .double-img {
+        padding: 0px 60px;
+    }
+
+    .stationImage img {
+        padding: 0px 60px;
+    }
+
+    .routes1-subtitle {
+        width: 500px;
+    }
+
+    .route1Translate {
+        font-size: 68px;
+    }
+
+    .route-versions__1_title {
+        padding: 0px 0px 127px 0px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .container-station-subtitle {
+        padding: 0px 100px;
+    }
+
+    .container-station-paragraph {
+        padding: 0px 100px;
+    }
+}
