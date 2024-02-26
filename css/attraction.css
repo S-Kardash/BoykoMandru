@@ -337,6 +337,16 @@ header.hidden {
     font-weight: 500;
     line-height: 140%;
     letter-spacing: 0.12px;
+}
+
+.page-navigation__attraction a {
+    color: var(--black, #131415);
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.12px;
     opacity: 0.6;
 }
 
@@ -346,7 +356,7 @@ header.hidden {
     text-decoration-line: underline;
 }
 
-/* ---------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
 
 
 
@@ -359,164 +369,115 @@ header.hidden {
 
 
 
-.attractionsContainer {
+
+
+
+
+
+
+
+
+.container-attraction {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 0px 185px;
+    align-items: center;
+    gap: 100px;
 }
 
-.titleAttractions {
+.container-attraction__title {
     color: var(--black, #131415);
     text-align: center;
-
-    /* H1 */
     font-family: "Alumni Sans";
     font-size: 76px;
     font-style: normal;
     font-weight: 500;
     line-height: 88%;
-    /* 66.88px */
-
     margin-top: 60px;
+    padding: 0px 170px;
 }
 
-.attrectionsWrap {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 32px;
+.container-attraction__image {
+    margin-top: -40px;
 }
 
-.elementAttraction {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    gap: 15px;
-    width: min-content;
-    margin-top: 60px;
-}
-
-.elementAttraction__image {
-    width: 569px;
-    height: 320px;
-}
-
-.elementAttraction__image img {
-    height: 100%;
+.container-attraction__image img {
     width: 100%;
-    border-radius: 20px;
+    height: 100%;
 }
 
-.elementAttraction__title {
-    color: var(--black, #131415);
-    text-align: start;
-    /* H4 */
-    font-family: "Alumni Sans";
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 88%;
-    /* 31.68px */
-
-    margin-top: 15px;
-}
-
-.elementAttraction__subtitle {
-    overflow: hidden;
+.container-attraction__txt {
     color: var(--black, #131415);
     font-variant-numeric: lining-nums proportional-nums;
-    text-overflow: ellipsis;
-
-    /* text 16 */
     font-family: Raleway;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
-    /* 22.4px */
-    letter-spacing: 0.48px;
-}
-
-.elementAttraction__link {
-    color: var(--green, #01594D);
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 148%;
     letter-spacing: 0.18px;
+    opacity: 0.9;
+    padding: 0px 195px;
 }
 
-.elementAttraction__link>a {
-    color: var(--green, #01594D);
-    font-variant-numeric: lining-nums proportional-nums;
-
-    /* button 18 */
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 148%;
-    /* 26.64px */
-    letter-spacing: 0.18px;
-    transition: opacity 0.3s ease-in;
-}
-
-.elementAttraction__link>a:hover {
-    opacity: 70%;
-}
-
-.additional-block {
-    margin-top: 0px;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.8s ease-in-out, max-height 0.8s ease-in-out;
-}
-
-.additional-block.visible {
-    margin-top: 60px;
-    opacity: 1;
-    max-height: 100%;
-    /* Змініть висоту на ваш вибір або встановіть 'auto', якщо вам не потрібен обмежувальний максимальний розмір */
-}
-
-.loadMore {
+.container-attraction__imagePlusvideo {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 8px;
-    background-color: #CFE8D0;
-    padding: 10px 28px;
-    border-radius: 100px;
-    color: var(--green, #01594D);
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: Raleway;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 148%;
-    letter-spacing: 0.18px;
-
-    margin-top: 60px;
-    transition: background 0.3s ease-in;
+    gap: 16px;
 }
 
-.loadMore:hover {
-    background: rgba(207, 232, 208, 0.60);
+.container-attraction__imagePlusvideo_image img {
+    width: 100%;
+    height: 100%;
 }
 
-#loadMoreIcon {
-    transition: transform 0.5s ease-in-out;
-    /* Додаємо анімацію обертання */
+.container-attraction__imagePlusvideo_video img {
+    width: 100%;
+    height: 100%;
 }
 
-.rotated {
-    transform: rotate(180deg);
-    /* Обертання на 180 градусів */
+
+
+@media screen and (max-width: 1440px) {
+    .container-attraction {
+        padding: 0px 120px;
+    }
 }
 
-/* ---------------------------------------------------------- */
+@media screen and (max-width: 1300px) {
+    .container-attraction {
+        padding: 0px 80px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container-attraction__txt {
+        padding: 0px 120px;
+    }
+
+    .container-attraction__title {
+        padding: 0px 120px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- */
 .container-footer {
     background: #01594D;
 }
@@ -946,12 +907,6 @@ header.hidden {
 }
 
 
-@media screen and (max-width: 1025px) {
-    .elementAttraction__image {
-        width: 440px;
-        height: 300px;
-    }
-}
 
 
 
