@@ -1,611 +1,694 @@
 <!DOCTYPE html>
 <html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1"
+		/>
+		<link rel="shortcut icon" href="/image/logo-icon.png" type="image/x-icon" />
+		<link rel="canonical" href="https://www.boykomandry.com/" />
+		<link rel="stylesheet" href="/css/routesChurch.css" />
+		<meta
+			name="description"
+			content="Безкоштовні туристичні маршрути горами Бойківщини"
+		/>
+		<meta
+			name="keywords"
+			content="екотуризм, походи в гори, мандри, піший туризм, вело туризм , Бойківщина, Карпати, бойко мандри, бойкомандри, Бойкомандри, Бойко Мандри, БойкоМандри, піший маршрут, веломаршрут"
+		/>
+		<title>БойкоМандри</title>
+		<title>Безкоштовні туристичні маршрути горами Бойківщини</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
-    <link rel="shortcut icon" href="/image/logo-icon.png" type="image/x-icon">
-    <link rel="canonical" href="https://www.boykomandry.com/" />
-    <link rel="stylesheet" href="/css/routesChurch.css">
-    <meta name="description" content="Безкоштовні туристичні маршрути горами Бойківщини">
-    <meta name="keywords"
-        content="екотуризм, походи в гори, мандри, піший туризм, вело туризм , Бойківщина, Карпати, бойко мандри, бойкомандри, Бойкомандри, Бойко Мандри, БойкоМандри, піший маршрут, веломаршрут">
-    <title>БойкоМандри</title>
-    <title>Безкоштовні туристичні маршрути горами Бойківщини</title>
-</head>
-
-<body>
-    <header>
-        <div id="container-header" class="container-header">
-            <div class="logo">
-                <a href="index.html"><img src="/image/logo.svg" alt="logo"></a>
-            </div>
-            <div class="navigation">
-                <div class="navigation__item">
-                    <ul>
-                        <a class="navigation__item__1" href="routes.html">
-                            <li class="routes">Маршрути</li>
-                        </a>
-                        <a class="navigation__item__2" href="/services.html">
-                            <li class="services">Послуги</li>
-                        </a>
-                        <a class="navigation__item__3" href="#">
-                            <li class="contacts">Контакти</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="language-change">
-                    <img loading="lazy" class="language-change__image-earth" src="/image/language.svg" alt="earth">
-                    <!-- <p class="language-change__layout">Ua</p> -->
-                    <div class="custom-select">
-                        <div class="select-trigger"></div>
-                        <ul class="select-options">
-                            <li data-value="Ua">Ua</li>
-                            <li data-value="Pol">Pol</li>
-                            <li data-value="Eng">Eng</li>
-                        </ul>
-                    </div>
-                    <img loading="lazy" class="language-change__image-row" src="/image/language-row.svg"
-                        alt="language-row">
-                </div>
-                <div class="contacts-wrap">
-                    <a href="tel:+380979146771">
-                        <div class="contacts-wrap__button">
-                            <img loading="lazy" class="contacts-wrap__image-phone" src="/image/telephone.svg"
-                                alt="Telephone">
-                            <p class="contacts-wrap__text">+380 97 91 46 771</p>
-                        </div>
-                    </a>
-                </div>
-                <div id="menu" class="menu">
-                    <a href="#" class="menu__button">
-                        <span class="menuText">Меню</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div id="mobile-header" class="mobile-header">
-            <div class="header-info">
-                <div class="header-text">
-                    <ul>
-                        <a href="/routes.html" class="routes">Маршрути</a>
-                        <a href="/services.html" class="services">Послуги</a>
-                        <a href="#" class="howToGet">Як доїхати</a>
-                        <a href="#" class="contacts">Контакти</a>
-                    </ul>
-                    <ul>
-                        <a href="/attractions.html" class="attractions">
-                            Пам'ятки
-                        </a>
-                        <a href="/aboutUs.html" class="aboutUs">
-                            Про нас
-                        </a>
-                        <a href="#" class="blogAndEvents">
-                            Блог та події
-                        </a>
-                    </ul>
-                </div>
-                <div class="header-white-line"></div>
-                <div class="header-navigation">
-                    <a href="tel:+380979146771">
-                        <div class="header-contacts__phone">
-                            <img src="/image/icon-footer-telephone.svg" alt="telephone">
-                            +380 97 91 46 771
-                        </div>
-                    </a>
-                    <a href="mailto:strilkivska@gmail.com">
-                        <div class="header-contacts__email">
-                            <img src="/image/icon-footer-mail.svg" alt="email">
-                            strilkivska@gmail.com
-                        </div>
-                    </a>
-                    <div class="header-social-networks">
-                        <a href="https://www.instagram.com/boykomandry/" target="_blank">
-                            <div class="header-social-networks__instagram">
-                                <img src="/image/icon-footer-instagram.svg" alt="inst-icon">
-                            </div>
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=61550602395011&locale=uk_UA" target="_blank">
-                            <div class="header-social-networks__facebook">
-                                <img src="/image/icon-footer-facebook.svg" alt="facebook-icon">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="header-language-change">
-                        <img loading="lazy" class="header-language-change__image-earth" src="/image/Globe.svg"
-                            alt="earth">
-                        <!-- <p class="header-language-change__layout">Ua</p> -->
-                        <div class="custom-select">
-                            <div class="select-trigger" style="font-family: Raleway; color:#FFF;">Ua</div>
-                            <ul class="select-options">
-                                <li data-value="Ua">Ua</li>
-                                <li data-value="Eng">Eng</li>
-                                <li data-value="Pol">Pol</li>
-                            </ul>
-                        </div>
-                        <img loading="lazy" class="language-change__image-row" src="/image/mobile-header-row.svg"
-                            alt="language-row">
-                    </div>
-                </div>
-            </div>
-            <div class="header-image-wrap">
-                <div class="header-image">
-                    <a href="#" id="close-icon" class="close-icon">
-                        <img src="/image/x.svg" alt="x">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="page-navigation">
-        <p class="page-navigation__main"><a class="NavMain" href="index.html">Головна</a></p>
-        <p class="page-navigation__row">></p>
-        <p class="page-navigation__routes"><a class="NavRoutes" href="routes.html">Маршрути</a></p>
-        <p class="page-navigation__row">></p>
-        <p class="page-navigation__route1"><a class="NavRoute1" href="routesChurch.html">Маршрут 1</a></p>
-    </div>
-    <div class="container-Church">
-        <div class="route-wrap">
-            <div class="bottom-row"><img id="rotateImage" onclick="toggleContainer()"
-                    src="/image-page-routesChurch/row-for-scroll.svg" alt="row">
-            </div>
-            <div class="animate-on-scroll">
-                <div class="route-versions__1">
-                    <div class="route-versions__1_title">
-                        <div class="routes1-info-wrap">
-                            <div class="routes1-info-wrap__level">
-                                <p class="levelTranslate1">майже легкий</p>
-                            </div>
-                            <div class="routes1-info-wrap__distance">
-                                <p class="distanceTranslate1">19 км</p>
-                            </div>
-                            <div class="routes1-info-wrap__height">
-                                <img loading="lazy" src="/image/routes-mountain.svg" alt="mountain">
-                                <p class="heightTranslate1">пік — 954 м</p>
-                            </div>
-                        </div>
-                        <div class="rotes1-title-wrap">
-                            <div class="routes1-title">
-                                <p class="routes1-title__accent"><span class="route1NumTranslate">Маршрут 1</span></p>
-                                <p class="route1Translate">До криївки в церкві</p>
-                            </div>
-                            <div class="routes1-line">
-                                <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo">
-                                <p class="Strilky">Стрілки</p>
-                                <div class="line"></div>
-                                <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo">
-                                <p class="Tysovytsia">Тисовиця</p>
-                                <div class="line"></div>
-                                <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo">
-                                <p class="Ploske">Плоске</p>
-                                <div class="line"></div>
-                                <img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo">
-                                <p class="Mshanets">Мшанець</p>
-                            </div>
-                            <div class="routes1-subtitle">
-                                <p class="route1SubtitleTranslate">
-                                    Погойдатись на карпатській гойдалці, смачно поїсти, знайти криївку в церкві і
-                                    переночувати у справжніх колибах!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="routes1-img">
-                        <img class="Church" loading="lazy" src="/image/Ploske.webp" alt="Ploske">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Елемент, який з'являється та зникає -->
-    <div id="container">
-        <div class="animate-on-scroll">
-            <div class="element" id="element-anotherMargin">
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="container-station">
-                    <div class="container-station-title">
-                        <div class="container-station-title__station-number">
-                            <span class="text">Зупинка</span>
-                            <span class="number">1</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="container-station-subtitle">
-                    <h2 class="subtitle1translate">Церква Святої прп. Параскевії (Сербської)</h2>
-                </div>
-                <div class="container-station-paragraph">
-                    <p class="parag1Translate">Ця тризрубна триверха церква належить до найкращих зразків сакральних
-                        споруд бойківського типу
-                        Старосамбірщини. У ній ще позначився вплив бароко у формах верхів і бань. На захід від церкви
-                        розташована дерев'яна триярусна дзвіниця ХІХ ст., всередині храму — оригінальний п’ятиярусний
-                        іконостас рядової побудови ХІХ ст.</p>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="container-station-img">
-                    <div class="container-station-img__title-img"><img src="/image-page-routesChurch/Church.jpg"
-                            alt="Church"></div>
-                    <div class="container-station-img__info-img">
-                        <div class="info-ChurchIMG"><img src="/image-page-routesChurch/Church-info.png" alt="Church">
-                        </div>
-                        <div class="wrap-info">
-                            <h4 class="moreAboutAttractions">Більше інформації про цю пам’ятку</h4>
-                            <a href="/attraction.html"><img src="/image/emotions-row.svg" alt="row"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="container-station">
-                    <div class="container-station-title">
-                        <div class="container-station-title__station-number">
-                            <span class="text">Зупинка</span>
-                            <span class="number">2</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="container-station-subtitle">
-                    <h2 class="subtitle2translate">Село Тисовиця</h2>
-                </div>
-                <div class="container-station-paragraph">
-                    <p class="parag2Translate">Село Тисовиця засноване на сирому корені вольським правом 1558 р.
-                        Староста Петро Боратинський
-                        доручив
-                        крайнику Осташу Дашковичу осадити село, надаючи йому водночас право на парохію 17 квітня того ж
-                        року.</p>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="stationImage">
-                    <img src="/image-page-routesChurch/station2-img.jpg" alt="tisovitsa">
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="container-station">
-                    <div class="container-station-title">
-                        <div class="container-station-title__station-number">
-                            <span class="text">Зупинка</span>
-                            <span class="number">3</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="container-station-subtitle">
-                    <h2 class="subtitle3translate">Вид на гору Магура</h2>
-                </div>
-                <div class="container-station-paragraph">
-                    <p class="parag3Translate">Магурою у Карпатах називають гору з вершиною, що повністю вкрита лісом та
-                        має висоту 1362,7 м.
-                        Вважається, що назва походить від румунського слова, яке означає «горб, підвищення, курган».</p>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="stationImage">
-                    <img src="/image-page-routesChurch/station3-img.jpg" alt="magura">
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="container-station">
-                    <div class="container-station-title">
-                        <div class="container-station-title__station-number">
-                            <span class="text">Зупинка</span>
-                            <span class="number">4</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="container-station-subtitle">
-                    <h2 class="subtitle4translate">Село Плоске та хутір Ворьовий</h2>
-                </div>
-                <div class="container-station-paragraph">
-                    <p class="parag4Translate">Хутір Ворьовий (або «Під Оровим») розташований на верхівці хребта Орового
-                        у масиві
-                        Верхньодністровські Бескиди. Ймовірно, це найвисотніший хутір на Старосамбірщині. Є присілком
-                        села
-                        Плоске, яке було засноване у 1526 р.</p>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="double-img">
-                    <div class="image1"><img src="/image-page-routesChurch/station4-img.jpg" alt="Ploske"></div>
-                    <div class="image2"><img src="/image-page-routesChurch/station4-img.jpg" alt="Ploske"></div>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="container-station">
-                    <div class="container-station-title">
-                        <div class="container-station-title__station-number">
-                            <span class="text">Зупинка</span>
-                            <span class="number">5</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="container-station-subtitle">
-                    <h2 class="subtitle5translate">Криївка в церкві Св. Архистратига Михаїла у селі Плоскім</h2>
-                </div>
-                <div class="container-station-paragraph">
-                    <p class="parag5Translate">Найдавніша збережена письмова згадка датується 1546 р., коли королева
-                        Бона надала парохію
-                        священнику
-                        Матвію. Сучасна будівля церкви збудована у 1903 р. в неоукраїнському стилі, належить до
-                        найкращих
-                        зразків сакральних споруд бойківського типу Старосамбірщини.</p>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="container-station-img">
-                    <div class="container-station-img__title-img"><img src="/image-page-routesChurch/station5-img.jpg"
-                            alt="Church"></div>
-                    <div class="container-station-img__info-img">
-                        <div class="info-ChurchIMG"><img src="/image-page-routesChurch/station5-info-img.png"
-                                alt="Church">
-                        </div>
-                        <div class="wrap-info">
-                            <h4 class="moreAboutAttractions">Більше інформації про цю пам’ятку</h4>
-                            <a href="/attraction.html"><img src="/image/emotions-row.svg" alt="row"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="container-station">
-                    <div class="container-station-title">
-                        <div class="container-station-title__station-number">
-                            <span class="text">Зупинка</span>
-                            <span class="number">6</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="container-station-subtitle">
-                    <h2 class="subtitle6translate">Ліс «Вінець»</h2>
-                </div>
-                <div class="container-station-paragraph">
-                    <p class="parag6Translate">Село Галівка, що знаходиться за лісом «Вінець», та довколишні села
-                        характерні наявністю багатьох
-                        повстанських криївок, що розміщувалися прямо в хатах.</p>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="stationImage">
-                    <img src="/image-page-routesChurch/station6-img.jpg" alt="vinets">
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element" id="element-nomargin">
-                <div class="container-station">
-                    <div class="container-station-title">
-                        <div class="container-station-title__station-number">
-                            <span class="text">Зупинка</span>
-                            <span class="number">7</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="container-station-subtitle">
-                    <h2 class="subtitle7translate">Еко-табір «Мшанецькі Колиби»</h2>
-                </div>
-                <div class="container-station-paragraph">
-                    <p class="parag7Translate">Це соціальне підприємництво релігійної громади Різдва Пресвятої
-                        Богородиці УГКЦ с. Мшанець,
-                        засноване
-                        у 2019 р. Його метою є соціальний, духовний та економічний розвиток краю шляхом створення
-                        успішних
-                        та інноваційних проєктів у сфері туризму на основі бойківських традицій та християнських
-                        цінностей.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="animate-on-scroll">
-            <div class="element">
-                <div class="double-img">
-                    <div class="image1"><img src="/image-page-routesChurch/station7-video.jpg" alt="kolubu"></div>
-                    <div class="image2"><img src="/image-page-routesChurch/station7-img.jpg" alt="kolubu"></div>
-                </div>
-            </div>
-        </div>
-        <!-- Додайте більше елементів за потребою -->
-    </div>
-    <div class="container-hire">
-        <div class="container-hire-wrapper">
-            <div class="container-hire-wrap">
-                <!-- <img src="/image/tents.png" alt="tents"> -->
-                <div class="hire-background">
-                    <div class="animate-on-scroll">
-                        <div class="hire-background__title">
-                            <p class="hireTitleTranslate">Наша спільнота пропонує</p>
-                        </div>
-                        <div class="hire-background__subtitle">
-                            <p class="hireSubtitleTranslate">У нас можна замовити прокат
-                                та проведення екскурсій</p>
-                        </div>
-                    </div>
-                    <div class="animate-on-scroll">
-                        <a href="#">
-                            <div class="hire-background__button">
-                                <p><span class="routesButton">Дізнатись більше</span><img src="/image/emotions-row.svg"
-                                        alt="button_row"></p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="hire-image"><img src="/image/tents.webp" alt="tents"></div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="container-footer">
-            <div class="animate-on-scroll">
-                <div class="footer-content">
-                    <div class="footer-logos">
-                        <div class="footer-logos__main"><img src="/image/logo-footer.svg" alt="logo"></div>
-                        <div class="footer-logos__main-info">
-                            <p class="footerMainTransalte">БойкоМандри: туристичні маршрути Стрілківської громади</p>
-                        </div>
-                        <div class="footer-logos__partner-info">
-                            <p class="footerPartnerTransalte">Проєкт реалізується за підтримки Українського культурного
-                                фонду та Стрілківської сільської ради</p>
-                        </div>
-                        <div class="footer-logos__partner">
-                            <img src="/image/UCF-logo.svg" alt="logo">
-                            <img src="/image/Strilku-logo.svg" alt="logo">
-                        </div>
-                    </div>
-                    <div class="footer-navigation">
-                        <div class="footer-navigation__column1">
-                            <a href="routes.html">
-                                <p class="routes">Маршрути</p>
-                            </a>
-                            <a href="/services.html">
-                                <p class="services">Послуги</p>
-                            </a>
-                            <a href="#">
-                                <p class="howToGet">Як доїхати</p>
-                            </a>
-                            <a href="#">
-                                <p class="contacts">Контакти</p>
-                            </a>
-                        </div>
-                        <div class="footer-navigation__column2">
-                            <a href="/attractions.html">
-                                <p class="attractions">Пам'ятки</p>
-                            </a>
-                            <a href="/aboutUs.html">
-                                <p class="aboutUs">Про нас</p>
-                            </a>
-                            <a href="#">
-                                <p class="blogAndEvents"> Блог та події</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer-contacts">
-                        <a href="tel:+380979146771">
-                            <div class="footer-contacts__phone">
-                                <img src="/image/icon-footer-telephone.svg" alt="telephone">
-                                +380 97 91 46 771
-                            </div>
-                        </a>
-                        <a href="mailto:strilkivska@gmail.com">
-                            <div class="footer-contacts__email">
-                                <img src="/image/icon-footer-mail.svg" alt="email">
-                                strilkivska@gmail.com
-                            </div>
-                        </a>
-                        <div class="footer-social-networks">
-                            <a href="https://www.instagram.com/boykomandry/" target="_blank">
-                                <div class="footer-social-networks__instagram">
-                                    <img src="/image/icon-footer-instagram.svg" alt="inst-icon">
-                                </div>
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=61550602395011&locale=uk_UA"
-                                target="_blank">
-                                <div class="footer-social-networks__facebook">
-                                    <img src="/image/icon-footer-facebook.svg" alt="facebook-icon">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="white-line"></div>
-            <div class="footer-bottom">
-                <div class="footer-bottom__laws">
-                    <p class="footerLawsTranslate">Усі права захищені</p>
-                </div>
-                <div class="footer-bottom__politic">
-                    <p class="footerPoliticTranslate">Політика конфіденційності</p>
-                </div>
-                <div class="footer-bottom__designer">
-                    <p class="footerDesignerTranslate">Дизайнер: Барабаш Анастасія</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="/js/routesChurch.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.3/dist/umd/i18next.min.js"></script>
-    <script src="/js/langChange.js"></script>
-</body>
-
+	<body>
+		<header>
+			<div id="container-header" class="container-header">
+				<div class="logo">
+					<a href="index.html"><img src="/image/logo.svg" alt="logo" /></a>
+				</div>
+				<div class="navigation">
+					<div class="navigation__item">
+						<ul>
+							<a class="navigation__item__1" href="routes.html">
+								<li class="routes">Маршрути</li>
+							</a>
+							<a class="navigation__item__2" href="/services.html">
+								<li class="services">Послуги</li>
+							</a>
+							<a class="navigation__item__3" href="/contacts.html">
+								<li class="contacts">Контакти</li>
+							</a>
+						</ul>
+					</div>
+					<div class="language-change">
+						<img
+							loading="lazy"
+							class="language-change__image-earth"
+							src="/image/language.svg"
+							alt="earth"
+						/>
+						<!-- <p class="language-change__layout">Ua</p> -->
+						<div class="custom-select">
+							<div class="select-trigger"></div>
+							<ul class="select-options">
+								<li data-value="Ua">Ua</li>
+								<li data-value="Pol">Pol</li>
+								<li data-value="Eng">Eng</li>
+							</ul>
+						</div>
+						<img
+							loading="lazy"
+							class="language-change__image-row"
+							src="/image/language-row.svg"
+							alt="language-row"
+						/>
+					</div>
+					<div class="contacts-wrap">
+						<a href="tel:+380979146771">
+							<div class="contacts-wrap__button">
+								<img
+									loading="lazy"
+									class="contacts-wrap__image-phone"
+									src="/image/telephone.svg"
+									alt="Telephone"
+								/>
+								<p class="contacts-wrap__text">+380 97 91 46 771</p>
+							</div>
+						</a>
+					</div>
+					<div id="menu" class="menu">
+						<a href="#" class="menu__button">
+							<span class="menuText">Меню</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="mobile-header" class="mobile-header">
+				<div class="header-info">
+					<div class="header-text">
+						<ul>
+							<a href="/routes.html" class="routes">Маршрути</a>
+							<a href="/services.html" class="services">Послуги</a>
+							<a href="/reach.html" class="howToGet">Як доїхати</a>
+							<a href="/contacts.html" class="contacts">Контакти</a>
+						</ul>
+						<ul>
+							<a href="/attractions.html" class="attractions"> Пам'ятки </a>
+							<a href="/aboutUs.html" class="aboutUs"> Про нас </a>
+							<a href="#" class="blogAndEvents"> Блог та події </a>
+						</ul>
+					</div>
+					<div class="header-white-line"></div>
+					<div class="header-navigation">
+						<a href="tel:+380979146771">
+							<div class="header-contacts__phone">
+								<img src="/image/icon-footer-telephone.svg" alt="telephone" />
+								+380 97 91 46 771
+							</div>
+						</a>
+						<a href="mailto:strilkivska@gmail.com">
+							<div class="header-contacts__email">
+								<img src="/image/icon-footer-mail.svg" alt="email" />
+								strilkivska@gmail.com
+							</div>
+						</a>
+						<div class="header-social-networks">
+							<a href="https://www.instagram.com/boykomandry/" target="_blank">
+								<div class="header-social-networks__instagram">
+									<img src="/image/icon-footer-instagram.svg" alt="inst-icon" />
+								</div>
+							</a>
+							<a
+								href="https://www.facebook.com/profile.php?id=61550602395011&locale=uk_UA"
+								target="_blank"
+							>
+								<div class="header-social-networks__facebook">
+									<img src="/image/icon-footer-facebook.svg" alt="facebook-icon" />
+								</div>
+							</a>
+						</div>
+						<div class="header-language-change">
+							<img
+								loading="lazy"
+								class="header-language-change__image-earth"
+								src="/image/Globe.svg"
+								alt="earth"
+							/>
+							<!-- <p class="header-language-change__layout">Ua</p> -->
+							<div class="custom-select">
+								<div class="select-trigger" style="font-family: Raleway; color: #fff">
+									Ua
+								</div>
+								<ul class="select-options">
+									<li data-value="Ua">Ua</li>
+									<li data-value="Eng">Eng</li>
+									<li data-value="Pol">Pol</li>
+								</ul>
+							</div>
+							<img
+								loading="lazy"
+								class="language-change__image-row"
+								src="/image/mobile-header-row.svg"
+								alt="language-row"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="header-image-wrap">
+					<div class="header-image">
+						<a href="#" id="close-icon" class="close-icon">
+							<img src="/image/x.svg" alt="x" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="page-navigation">
+			<p class="page-navigation__main">
+				<a class="NavMain" href="index.html">Головна</a>
+			</p>
+			<p class="page-navigation__row">></p>
+			<p class="page-navigation__routes">
+				<a class="NavRoutes" href="routes.html">Маршрути</a>
+			</p>
+			<p class="page-navigation__row">></p>
+			<p class="page-navigation__route1">
+				<a class="NavRoute1" href="routesChurch.html">Маршрут 1</a>
+			</p>
+		</div>
+		<div class="container-Church">
+			<div class="route-wrap">
+				<div class="bottom-row">
+					<img
+						id="rotateImage"
+						onclick="toggleContainer()"
+						src="/image-page-routesChurch/row-for-scroll.svg"
+						alt="row"
+					/>
+				</div>
+				<div class="animate-on-scroll">
+					<div class="route-versions__1">
+						<div class="route-versions__1_title">
+							<div class="routes1-info-wrap">
+								<div class="routes1-info-wrap__level">
+									<p class="levelTranslate1">майже легкий</p>
+								</div>
+								<div class="routes1-info-wrap__distance">
+									<p class="distanceTranslate1">19 км</p>
+								</div>
+								<div class="routes1-info-wrap__height">
+									<img loading="lazy" src="/image/routes-mountain.svg" alt="mountain" />
+									<p class="heightTranslate1">пік — 954 м</p>
+								</div>
+							</div>
+							<div class="rotes1-title-wrap">
+								<div class="routes1-title">
+									<p class="routes1-title__accent">
+										<span class="route1NumTranslate">Маршрут 1</span>
+									</p>
+									<p class="route1Translate">До криївки в церкві</p>
+								</div>
+								<div class="routes1-line">
+									<img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo" />
+									<p class="Strilky">Стрілки</p>
+									<div class="line"></div>
+									<img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo" />
+									<p class="Tysovytsia">Тисовиця</p>
+									<div class="line"></div>
+									<img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo" />
+									<p class="Ploske">Плоске</p>
+									<div class="line"></div>
+									<img src="/image-page-routesChurch/GeoAltFill.svg" alt="geo" />
+									<p class="Mshanets">Мшанець</p>
+								</div>
+								<div class="routes1-subtitle">
+									<p class="route1SubtitleTranslate">
+										Погойдатись на карпатській гойдалці, смачно поїсти, знайти криївку в
+										церкві і переночувати у справжніх колибах!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="routes1-img">
+							<img
+								class="Church"
+								loading="lazy"
+								src="/image/Ploske.webp"
+								alt="Ploske"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Елемент, який з'являється та зникає -->
+		<div id="container">
+			<div class="animate-on-scroll">
+				<div class="element" id="element-anotherMargin">
+					<div class="vertical-line"></div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="container-station">
+						<div class="container-station-title">
+							<div class="container-station-title__station-number">
+								<span class="text">Зупинка</span>
+								<span class="number">1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="container-station-subtitle">
+						<h2 class="subtitle1translate">
+							Церква Святої прп. Параскевії (Сербської)
+						</h2>
+					</div>
+					<div class="container-station-paragraph">
+						<p class="parag1Translate">
+							Ця тризрубна триверха церква належить до найкращих зразків сакральних
+							споруд бойківського типу Старосамбірщини. У ній ще позначився вплив
+							бароко у формах верхів і бань. На захід від церкви розташована дерев'яна
+							триярусна дзвіниця ХІХ ст., всередині храму — оригінальний п’ятиярусний
+							іконостас рядової побудови ХІХ ст.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="container-station-img">
+						<div class="container-station-img__title-img">
+							<img src="/image-page-routesChurch/Church.jpg" alt="Church" />
+						</div>
+						<div class="container-station-img__info-img">
+							<div class="info-ChurchIMG">
+								<img src="/image-page-routesChurch/Church-info.png" alt="Church" />
+							</div>
+							<div class="wrap-info">
+								<h4 class="moreAboutAttractions">Більше інформації про цю пам’ятку</h4>
+								<a href="/attraction.html"
+									><img src="/image/emotions-row.svg" alt="row"
+								/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="vertical-line"></div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="container-station">
+						<div class="container-station-title">
+							<div class="container-station-title__station-number">
+								<span class="text">Зупинка</span>
+								<span class="number">2</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="container-station-subtitle">
+						<h2 class="subtitle2translate">Село Тисовиця</h2>
+					</div>
+					<div class="container-station-paragraph">
+						<p class="parag2Translate">
+							Село Тисовиця засноване на сирому корені вольським правом 1558 р.
+							Староста Петро Боратинський доручив крайнику Осташу Дашковичу осадити
+							село, надаючи йому водночас право на парохію 17 квітня того ж року.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="stationImage">
+						<img src="/image-page-routesChurch/station2-img.jpg" alt="tisovitsa" />
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="vertical-line"></div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="container-station">
+						<div class="container-station-title">
+							<div class="container-station-title__station-number">
+								<span class="text">Зупинка</span>
+								<span class="number">3</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="container-station-subtitle">
+						<h2 class="subtitle3translate">Вид на гору Магура</h2>
+					</div>
+					<div class="container-station-paragraph">
+						<p class="parag3Translate">
+							Магурою у Карпатах називають гору з вершиною, що повністю вкрита лісом та
+							має висоту 1362,7 м. Вважається, що назва походить від румунського слова,
+							яке означає «горб, підвищення, курган».
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="stationImage">
+						<img src="/image-page-routesChurch/station3-img.jpg" alt="magura" />
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="vertical-line"></div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="container-station">
+						<div class="container-station-title">
+							<div class="container-station-title__station-number">
+								<span class="text">Зупинка</span>
+								<span class="number">4</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="container-station-subtitle">
+						<h2 class="subtitle4translate">Село Плоске та хутір Ворьовий</h2>
+					</div>
+					<div class="container-station-paragraph">
+						<p class="parag4Translate">
+							Хутір Ворьовий (або «Під Оровим») розташований на верхівці хребта Орового
+							у масиві Верхньодністровські Бескиди. Ймовірно, це найвисотніший
+							хутір на Старосамбірщині. Є присілком села Плоске, яке було засноване
+							у 1526 р.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="double-img">
+						<div class="image1">
+							<img src="/image-page-routesChurch/station4-img.jpg" alt="Ploske" />
+						</div>
+						<div class="image2">
+							<img src="/image-page-routesChurch/station4-img.jpg" alt="Ploske" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="vertical-line"></div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="container-station">
+						<div class="container-station-title">
+							<div class="container-station-title__station-number">
+								<span class="text">Зупинка</span>
+								<span class="number">5</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="container-station-subtitle">
+						<h2 class="subtitle5translate">
+							Криївка в церкві Св. Архистратига Михаїла у селі Плоскім
+						</h2>
+					</div>
+					<div class="container-station-paragraph">
+						<p class="parag5Translate">
+							Найдавніша збережена письмова згадка датується 1546 р., коли королева
+							Бона надала парохію священнику Матвію. Сучасна будівля церкви збудована у
+							1903 р. в неоукраїнському стилі, належить до найкращих зразків сакральних
+							споруд бойківського типу Старосамбірщини.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="container-station-img">
+						<div class="container-station-img__title-img">
+							<img src="/image-page-routesChurch/station5-img.jpg" alt="Church" />
+						</div>
+						<div class="container-station-img__info-img">
+							<div class="info-ChurchIMG">
+								<img
+									src="/image-page-routesChurch/station5-info-img.png"
+									alt="Church"
+								/>
+							</div>
+							<div class="wrap-info">
+								<h4 class="moreAboutAttractions">Більше інформації про цю пам’ятку</h4>
+								<a href="/attraction.html"
+									><img src="/image/emotions-row.svg" alt="row"
+								/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="vertical-line"></div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="container-station">
+						<div class="container-station-title">
+							<div class="container-station-title__station-number">
+								<span class="text">Зупинка</span>
+								<span class="number">6</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="container-station-subtitle">
+						<h2 class="subtitle6translate">Ліс «Вінець»</h2>
+					</div>
+					<div class="container-station-paragraph">
+						<p class="parag6Translate">
+							Село Галівка, що знаходиться за лісом «Вінець», та довколишні села
+							характерні наявністю багатьох повстанських криївок, що розміщувалися
+							прямо в хатах.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="stationImage">
+						<img src="/image-page-routesChurch/station6-img.jpg" alt="vinets" />
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="vertical-line"></div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element" id="element-nomargin">
+					<div class="container-station">
+						<div class="container-station-title">
+							<div class="container-station-title__station-number">
+								<span class="text">Зупинка</span>
+								<span class="number">7</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="container-station-subtitle">
+						<h2 class="subtitle7translate">Еко-табір «Мшанецькі Колиби»</h2>
+					</div>
+					<div class="container-station-paragraph">
+						<p class="parag7Translate">
+							Це соціальне підприємництво релігійної громади Різдва Пресвятої
+							Богородиці УГКЦ с. Мшанець, засноване у 2019 р. Його метою є соціальний,
+							духовний та економічний розвиток краю шляхом створення успішних та
+							інноваційних проєктів у сфері туризму на основі бойківських традицій та
+							християнських цінностей.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="animate-on-scroll">
+				<div class="element">
+					<div class="double-img">
+						<div class="image1">
+							<img src="/image-page-routesChurch/station7-video.jpg" alt="kolubu" />
+						</div>
+						<div class="image2">
+							<img src="/image-page-routesChurch/station7-img.jpg" alt="kolubu" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Додайте більше елементів за потребою -->
+		</div>
+		<div class="container-hire">
+			<div class="container-hire-wrapper">
+				<div class="container-hire-wrap">
+					<!-- <img src="/image/tents.png" alt="tents"> -->
+					<div class="hire-background">
+						<div class="animate-on-scroll">
+							<div class="hire-background__title">
+								<p class="hireTitleTranslate">Наша спільнота пропонує</p>
+							</div>
+							<div class="hire-background__subtitle">
+								<p class="hireSubtitleTranslate">
+									У нас можна замовити прокат та проведення екскурсій
+								</p>
+							</div>
+						</div>
+						<div class="animate-on-scroll">
+							<a href="/services.html">
+								<div class="hire-background__button">
+									<p>
+										<span class="routesButton">Дізнатись більше</span
+										><img src="/image/emotions-row.svg" alt="button_row" />
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="hire-image"><img src="/image/tents.webp" alt="tents" /></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container-footer">
+				<div class="animate-on-scroll">
+					<div class="footer-content">
+						<div class="footer-logos">
+							<div class="footer-logos__main">
+								<img src="/image/logo-footer.svg" alt="logo" />
+							</div>
+							<div class="footer-logos__main-info">
+								<p class="footerMainTransalte">
+									БойкоМандри: туристичні маршрути Стрілківської громади
+								</p>
+							</div>
+							<div class="footer-logos__partner-info">
+								<p class="footerPartnerTransalte">
+									Проєкт реалізується за підтримки Українського культурного фонду та
+									Стрілківської сільської ради
+								</p>
+							</div>
+							<div class="footer-logos__partner">
+								<img src="/image/UCF-logo.svg" alt="logo" />
+								<img src="/image/Strilku-logo.svg" alt="logo" />
+							</div>
+						</div>
+						<div class="footer-navigation">
+							<div class="footer-navigation__column1">
+								<a href="routes.html">
+									<p class="routes">Маршрути</p>
+								</a>
+								<a href="/services.html">
+									<p class="services">Послуги</p>
+								</a>
+								<a href="/reach.html">
+									<p class="howToGet">Як доїхати</p>
+								</a>
+								<a href="/contacts.html">
+									<p class="contacts">Контакти</p>
+								</a>
+							</div>
+							<div class="footer-navigation__column2">
+								<a href="/attractions.html">
+									<p class="attractions">Пам'ятки</p>
+								</a>
+								<a href="/aboutUs.html">
+									<p class="aboutUs">Про нас</p>
+								</a>
+								<a href="#">
+									<p class="blogAndEvents">Блог та події</p>
+								</a>
+							</div>
+						</div>
+						<div class="footer-contacts">
+							<a href="tel:+380979146771">
+								<div class="footer-contacts__phone">
+									<img src="/image/icon-footer-telephone.svg" alt="telephone" />
+									+380 97 91 46 771
+								</div>
+							</a>
+							<a href="mailto:strilkivska@gmail.com">
+								<div class="footer-contacts__email">
+									<img src="/image/icon-footer-mail.svg" alt="email" />
+									strilkivska@gmail.com
+								</div>
+							</a>
+							<div class="footer-social-networks">
+								<a href="https://www.instagram.com/boykomandry/" target="_blank">
+									<div class="footer-social-networks__instagram">
+										<img src="/image/icon-footer-instagram.svg" alt="inst-icon" />
+									</div>
+								</a>
+								<a
+									href="https://www.facebook.com/profile.php?id=61550602395011&locale=uk_UA"
+									target="_blank"
+								>
+									<div class="footer-social-networks__facebook">
+										<img src="/image/icon-footer-facebook.svg" alt="facebook-icon" />
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="white-line"></div>
+				<div class="footer-bottom">
+					<div class="footer-bottom__laws">
+						<p class="footerLawsTranslate">Усі права захищені</p>
+					</div>
+					<div class="footer-bottom__politic">
+						<p class="footerPoliticTranslate">Політика конфіденційності</p>
+					</div>
+					<div class="footer-bottom__designer">
+						<p class="footerDesignerTranslate">Дизайнер: Барабаш Анастасія</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="/js/routesChurch.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+		<script src="/js/langChange.js"></script>
+	</body>
 </html>
