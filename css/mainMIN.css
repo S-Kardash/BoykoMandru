@@ -259,10 +259,7 @@ header.hidden {
 }
 
 .menu__button:active {
-	transition: none;
 	background: rgba(1, 89, 77, 0.2);
-	border: none;
-	padding: 17px 28px;
 }
 
 .menu__button span {

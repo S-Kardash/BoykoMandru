@@ -100,31 +100,31 @@ rotateImage.addEventListener("click", function () {
 //     containerVisible = !containerVisible;
 // }
 
-let containerVisible = false;
-const container = document.getElementById("container");
-const elements = document.querySelectorAll(".element");
+// let containerVisible = false;
+// const container = document.getElementById("container");
+// const elements = document.querySelectorAll(".element");
 
-function toggleContainer() {
-	container.classList.toggle("visible", !containerVisible);
+// function toggleContainer() {
+// 	container.classList.toggle("visible", !containerVisible);
 
-	if (!containerVisible) {
-		container.style.maxHeight = "7372px";
-		container.classList.remove("hidden");
-		elements.forEach((element, index) => {
-			const delay = index * 0.1;
-			element.style.transition = `transform 0.5s ease-in-out ${delay}s, opacity 0.5s ease-in-out ${delay}s`;
-			element.style.opacity = 1;
-			element.style.transform = "translateY(0)";
-		});
-	} else {
-		container.style.maxHeight = "0";
-		elements.forEach((element, index) => {
-			const delay = index * 0.1;
-			element.style.transition = `transform 0.5s ease-in-out ${delay}s, opacity 0.5s ease-in-out ${delay}s`;
-			element.style.opacity = 0;
-			element.style.transform = "translateY(20px)";
-		});
-	}
+// 	if (!containerVisible) {
+// 		container.style.maxHeight = "7372px";
+// 		container.classList.remove("hidden");
+// 		elements.forEach((element, index) => {
+// 			const delay = index * 0.1;
+// 			element.style.transition = `transform 0.5s ease-in-out ${delay}s, opacity 0.5s ease-in-out ${delay}s`;
+// 			element.style.opacity = 1;
+// 			element.style.transform = "translateY(0)";
+// 		});
+// 	} else {
+// 		container.style.maxHeight = "0";
+// 		elements.forEach((element, index) => {
+// 			const delay = index * 0.1;
+// 			element.style.transition = `transform 0.5s ease-in-out ${delay}s, opacity 0.5s ease-in-out ${delay}s`;
+// 			element.style.opacity = 0;
+// 			element.style.transform = "translateY(20px)";
+// 		});
+// 	}
 
-	containerVisible = !containerVisible;
-}
+// 	containerVisible = !containerVisible;
+// }
